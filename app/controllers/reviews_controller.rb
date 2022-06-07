@@ -4,14 +4,7 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    @beer = Beer.find(params[:beer_id])
-    @review = Review.new(review_params)
-    @review.beer = @beer
-    if @review.save
-      redirect_to beer_path(@beer)
-    else
-      render 'beers/show'
-    end
+
   end
 
   private
@@ -19,4 +12,5 @@ class ReviewsController < ApplicationController
   def review_params
     params.require(:review).permit(:rating, :comment)
   end
+
 end

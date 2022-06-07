@@ -1,0 +1,4 @@
+All Recipes
+<% @recipes.each do |recipe| %>
+  <%= link_to recipe.aliment_type, recipe_path(recipe) %>
+<% end %>

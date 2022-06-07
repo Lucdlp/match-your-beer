@@ -1,0 +1,4 @@
+All beers
+<% @beers.each do |beer| %>
+  <%= link_to beer.color, beer_path(beer) %>
+<% end %>

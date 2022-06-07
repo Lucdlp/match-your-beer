@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Detroying all beers"
+Beer.destroy_all
+
+puts "Create some beers..."
+
+beer = Beer.create!(brewery: 'Brussels Beer Project', name: 'Delta IPA', color: 'Ambrée', style: 'Belgian IPA', alcohol_level: '6,00', ibu_level: '45', country: 'Belgique')
+
+beer = Beer.create!(brewery: 'Hoegaarden', name: 'Wit-Blanche', color: 'Blanche', style: 'Witbier', alcohol_level: '4,90', ibu_level: '15', country: 'Belgique')
+
+beer = Beer.create!(brewery: 'Peak Beer', name: 'Peak Blonde', color: 'Blonde', style: 'Blonde Ale', alcohol_level: '6,00', ibu_level: '28', country: 'Belgique')
+
+beer = Beer.create!(brewery: 'Abbaye de Leffe', name: 'Leffe Brune', color: 'Brune', style: 'Brown Ale', alcohol_level: '6,50', ibu_level: '20', country: 'Belgique')
+
+beer = Beer.create!(brewery: 'Brasserie Lindemans', name: 'Kriek', color: 'Fruitée', style: 'Lambic', alcohol_level: '3,50', ibu_level: '18', country: 'Belgique')
+
+beer = Beer.create!(brewery: 'NovaBirra', name: 'Big Mama', color: 'Noire', style: 'Belgian Cacao Stout', alcohol_level: '8,00', ibu_level: '42', country: 'Belgique')
+
+puts "Beers created!"
