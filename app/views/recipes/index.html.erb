@@ -1,4 +1,6 @@
-All Recipes
+
 <% @recipes.each do |recipe| %>
-  <%= link_to recipe.aliment_type, recipe_path(recipe) %>
+  <%= link_to recipe.name, recipe_path(recipe) %>
+  <%= recipe.difficulty_level %>
+  <%= recipe.prep_time %>
 <% end %>
