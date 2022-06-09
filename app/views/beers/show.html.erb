@@ -1,5 +1,23 @@
 Beer SHOW
 
-<% @beer.name %>
-<% @beer.brewery %>
-<% @beer.alcohol_level %>
+
+<%= @beer.name %>
+<%= @beer.brewery %>
+<%= @beer.alcohol_level %>
+
+Ajouter le bouton favoris vers l'espace 'Current User'
+
+
+Voir les différents magasins :
+
+<% @shops.each do |shop| %>
+<%= shop.name %>
+<% end %>
+
+
+Voir les différents reviews sur la biére :
+
+<% @reviews.each do |review| %>
+<%= review.rating %>
+<%= review.comment %>
+<% end %>
