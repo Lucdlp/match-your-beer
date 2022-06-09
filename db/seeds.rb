@@ -23,4 +23,13 @@ beer = Beer.create!(brewery: 'Brasserie Lindemans', name: 'Kriek', color: 'Fruit
 
 beer = Beer.create!(brewery: 'NovaBirra', name: 'Big Mama', color: 'Noire', style: 'Belgian Cacao Stout', alcohol_level: '8,00', ibu_level: '42', country: 'Belgique')
 
+
+recipe = Recipe.create!(name: 'Pumpkin Pie', description: 'A delicious pumpkin pie', photo: 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/05/pumpkin-pie.jpg?itok=_XZqYlzp', aliment_type: 'Dessert', difficulty_level: 'Facile', prep_time: '30')
+
+puts "Beers created!"
+
+
+shop = Shop.create!(name: 'Caverne de la biére')
+
+
 puts "Beers created!"
