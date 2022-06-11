@@ -3,5 +3,6 @@ class RecipesCategoryController < ApplicationController
 
   def index
     @recipes_category = Recipe.all
+    @query_recipes = Recipe.tagged_with([params[:query]], any: true)
   end
 end

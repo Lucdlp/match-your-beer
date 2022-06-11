@@ -8,14 +8,16 @@
 
 puts "Detroying all beers"
 Beer.destroy_all
+Recipe.destroy_all
+Shop.destroy_all
 
 puts "Create some beers..."
 
-beer = Beer.create!(brewery: 'Brussels Beer Project', name: 'Delta IPA', color: 'Ambrée', style: 'Belgian IPA', alcohol_level: '6,00', ibu_level: '45', country: 'Belgique')
+beer = Beer.create!(brewery: 'Brussels Beer Project', name: 'Delta IPA', color: 'Ambrée', style: 'Belgian IPA', alcohol_level: '6,00', ibu_level: '45', country: 'Belgique', tag_list: 'crustacé')
 
-beer = Beer.create!(brewery: 'Hoegaarden', name: 'Wit-Blanche', color: 'Blanche', style: 'Witbier', alcohol_level: '4,90', ibu_level: '15', country: 'Belgique')
+beer = Beer.create!(brewery: 'Hoegaarden', name: 'Wit-Blanche', color: 'Blanche', style: 'Witbier', alcohol_level: '4,90', ibu_level: '15', country: 'Belgique', tag_list: 'poisson')
 
-beer = Beer.create!(brewery: 'Peak Beer', name: 'Peak Blonde', color: 'Blonde', style: 'Blonde Ale', alcohol_level: '6,00', ibu_level: '28', country: 'Belgique')
+beer = Beer.create!(brewery: 'Peak Beer', name: 'Peak Blonde', color: 'Blonde', style: 'Blonde Ale', alcohol_level: '6,00', ibu_level: '28', country: 'Belgique', tag_list: 'sucré, viande')
 
 beer = Beer.create!(brewery: 'Abbaye de Leffe', name: 'Leffe Brune', color: 'Brune', style: 'Brown Ale', alcohol_level: '6,50', ibu_level: '20', country: 'Belgique')
 
@@ -24,9 +26,14 @@ beer = Beer.create!(brewery: 'Brasserie Lindemans', name: 'Kriek', color: 'Fruit
 beer = Beer.create!(brewery: 'NovaBirra', name: 'Big Mama', color: 'Noire', style: 'Belgian Cacao Stout', alcohol_level: '8,00', ibu_level: '42', country: 'Belgique')
 
 
-recipe = Recipe.create!(name: 'Pumpkin Pie', description: 'A delicious pumpkin pie', photo: 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/05/pumpkin-pie.jpg?itok=_XZqYlzp', aliment_type: 'Dessert', difficulty_level: 'Facile', prep_time: '30')
+recipe = Recipe.create!(name: 'Pumpkin Pie', description: 'A delicious pumpkin pie', photo: 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/05/pumpkin-pie.jpg?itok=_XZqYlzp', aliment_type: 'Dessert', difficulty_level: 'Facile', prep_time: '30', tag_list: 'sucré')
 
-puts "Beers created!"
+recipe = Recipe.create!(name: 'Poulet pané au parmesan', description: 'A delicious recipe', photo: 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/05/pumpkin-pie.jpg?itok=_XZqYlzp', aliment_type: 'Viande', difficulty_level: 'Facile', prep_time: '30', tag_list: 'viande')
+
+recipe = Recipe.create!(name: 'Homard au beure', description: 'A delicious recipe', photo: 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/05/pumpkin-pie.jpg?itok=_XZqYlzp', aliment_type: 'Crustacé', difficulty_level: 'Facile', prep_time: '30', tag_list: 'crustacé')
+
+recipe = Recipe.create!(name: 'Truite', description: 'A delicious recipe', photo: 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2016/05/pumpkin-pie.jpg?itok=_XZqYlzp', aliment_type: 'Poisson', difficulty_level: 'Facile', prep_time: '30', tag_list: 'poisson')
+
 
 
 shop = Shop.create!(name: 'Caverne de la biére')

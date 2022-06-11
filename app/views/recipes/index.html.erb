@@ -1,3 +1,8 @@
+All recipes
+
+<% params[:query].split(', ').each do |param| %>
+  <%= param %>
+<% end %>
 
 <% @recipes.each do |recipe| %>
   <%= link_to recipe.name, recipe_path(recipe) %>
