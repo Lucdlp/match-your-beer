@@ -1,1 +1,25 @@
 // Specific CSS for your home-page
+#background-video {
+  width: 100vw;
+  object-fit: cover;
+}
+
+.banner {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  height: calc(100vh - 190px);
+}
+
+.banner-video {
+  position: absolute;
+  top: 190px;
+  bottom: 0;
+}
+
+.banner-text {
+  position: relative;
+  top: -80%;
+}

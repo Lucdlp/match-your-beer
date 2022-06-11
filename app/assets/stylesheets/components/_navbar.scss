@@ -8,5 +8,20 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 180px;
+}
+
+.collapse {
+  margin-right: 25px;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #6c757d;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.nav_link:hover {
+  color: #51575c;
 }
