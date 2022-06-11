@@ -1,5 +1,9 @@
 <%# All beers category
 
+---
+code design
+---
+
 <%# <% @beers_category.each do |beer| %>
 <%#  <%= link_to beer.color, recipes_path %>
 <%# <% end %>
@@ -22,6 +26,27 @@
         </div>
       </div>
     </div>
+
+---
+code brut (tag query)
+--- 
+    
+<div class="container">
+  <div class="cards">
+    <%= link_to recipes_path(query: "sucré, viande") do %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(6,56,128,0.3),rgba(0,0,0,0.6)), url('https://static.mensup.fr/photo_article/110038/63203/1200-L-des-bires-diffrencier.jpg')">
+        Biére Blonde
+      </div>
+    <% end %>
+    <%= link_to recipes_path(query: "poisson") do %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(6,56,128,0.3),rgba(0,0,0,0.6)), url('https://static.mensup.fr/photo_article/110038/63203/1200-L-des-bires-diffrencier.jpg')">
+        Biére Blanche
+      </div>
+    <% end %>
+    <%= link_to recipes_path(query: "crustacé") do %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(6,56,128,0.3),rgba(0,0,0,0.6)), url('https://static.mensup.fr/photo_article/110038/63203/1200-L-des-bires-diffrencier.jpg')">
+        Biére Ambrée
+      </div>
     <% end %>
   </div>
 </div>

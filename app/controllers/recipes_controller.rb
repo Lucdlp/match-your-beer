@@ -1,7 +1,11 @@
 class RecipesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :index, :show ]
+  skip_before_action :authenticate_user!, only: [:index, :show]
   def index
-    @recipes = Recipe.all
+    if params[:query]
+      @recipes = Recipe.tagged_with(params[:query].split(', '), any: true)
+    else
+      @recipes = Recipe.all
+    end
   end
 
   def show

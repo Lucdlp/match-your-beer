@@ -1,5 +1,10 @@
 All beers
 
+<% params[:query].split(', ').each do |param| %>
+  <%= param %>
+<% end %>
+
+
 <% @beers.each do |beer| %>
   <%= link_to beer.name, beer_path(beer) %>
   <%= beer.brewery %>

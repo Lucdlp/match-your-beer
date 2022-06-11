@@ -1,5 +1,22 @@
 All Recipes
 
-<% @recipes_category.each do |recipe| %>
-  <%= link_to recipe.aliment_type, beers_path %>
-<% end %>
+
+<div class="container">
+  <div class="cards">
+    <%= link_to beers_path(query: "sucré, viande") do %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(6,56,128,0.3),rgba(0,0,0,0.6)), url('https://static.mensup.fr/photo_article/110038/63203/1200-L-des-bires-diffrencier.jpg')">
+        Viande
+      </div>
+    <% end %>
+    <%= link_to beers_path(query: "poisson") do %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(6,56,128,0.3),rgba(0,0,0,0.6)), url('https://static.mensup.fr/photo_article/110038/63203/1200-L-des-bires-diffrencier.jpg')">
+        Poisson
+      </div>
+    <% end %>
+    <%= link_to beers_path(query: "crustacé") do %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(6,56,128,0.3),rgba(0,0,0,0.6)), url('https://static.mensup.fr/photo_article/110038/63203/1200-L-des-bires-diffrencier.jpg')">
+        Crustacé
+      </div>
+    <% end %>
+  </div>
+</div>

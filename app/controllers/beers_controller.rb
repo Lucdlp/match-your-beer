@@ -2,7 +2,11 @@ class BeersController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index
-    @beers = Beer.all
+    if params[:query]
+      @beers = Beer.tagged_with(params[:query].split(', '), any: true)
+    else
+      @beers = Beer.all
+    end
   end
 
   def show
@@ -10,5 +14,4 @@ class BeersController < ApplicationController
     @shops = Shop.all
     @review = Review.new
   end
-
 end
