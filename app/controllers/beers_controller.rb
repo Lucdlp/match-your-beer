@@ -13,5 +13,15 @@ class BeersController < ApplicationController
     @beer = Beer.find(params[:id])
     @shops = Shop.all
     @review = Review.new
+
+    @shops = Shop.all
+
+    # the `geocoded` scope filters only flats with coordinates (latitude & longitude)
+    @markers = @shops.geocoded.map do |shop|
+      {
+        lat: shop.latitude,
+        lng: shop.longitude
+      }
+    end
   end
 end

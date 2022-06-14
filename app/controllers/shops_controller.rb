@@ -1,3 +1,2 @@
 class ShopsController < ApplicationController
-
 end
