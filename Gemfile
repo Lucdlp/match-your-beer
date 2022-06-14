@@ -27,6 +27,8 @@ gem 'redis', '~> 4.0'
 
 gem 'acts-as-taggable-on', '~> 9.0'
 
+gem "geocoder"
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
