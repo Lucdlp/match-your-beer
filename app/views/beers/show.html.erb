@@ -1,23 +1,35 @@
-Beer SHOW
+<div class="title">
+  <h2>Voici les repas qui match avec ta bière</h2>
+</div>
 
+<div class="container-product">
+  <div class="card-product">
+    <div class="card-product-infos">
+      <p><%= @beer.name %></p>
+      <p>Brasserie — <%= @beer.brewery %></p>
+      <p>Taux d'alcool — <%= @beer.alcohol_level %></p>
+      <p>IBU / amertume — <%= @beer.ibu_level %></p>
+    </div>
+  </div>
+</div>
 
-<%= @beer.name %>
-<%= @beer.brewery %>
-<%= @beer.alcohol_level %>
-
-Ajouter le bouton favoris vers l'espace 'Current User'
-
-
+<br>
+<br>
+<br>
+<p>Ajouter le bouton favoris vers l'espace 'Current User'</p>
+<br>
+<br>
 Voir les différents magasins :
-
 <% @shops.each do |shop| %>
 <%= shop.name %>
 <% end %>
 
 
-Voir les différents reviews sur la biére :
+
+
+<%# Voir les différents reviews sur la biére :
 
 <% @reviews.each do |review| %>
-<%= review.rating %>
-<%= review.comment %>
-<% end %>
+<%# <%= review.rating %>
+<%#<%= review.comment %>
+<%# <% end %>
