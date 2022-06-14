@@ -1,52 +1,120 @@
-<%# All beers category
-
----
-code design
----
-
-<%# <% @beers_category.each do |beer| %>
-<%#  <%= link_to beer.color, recipes_path %>
-<%# <% end %>
-<%# <% link_to recipes_path %>
-
 <div class="container">
   <div class="container-card">
-    <% @beers_category.each do |beer| %>
     <div class="card">
       <div class="card-img"></div>
         <div class="card-info">
           <div class="card-text">
-            <p class="text-title"><%= beer.color %></p>
-            <p class="text-subtitle">This is a subtitle</p>
+            <p class="text-title">Bière fruitée</p>
+            <%# <p class="text-subtitle">This is a subtitle</p> %>
           </div>
           <div class="card-icon">
             <svg viewBox="0 0 28 25">
               <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
             </svg>
-        </div>
+          </div>
       </div>
     </div>
+  </div>
+</div>
 
----
-code brut (tag query)
---- 
-    
 <div class="container">
-  <div class="cards">
-    <%= link_to recipes_path(query: "sucré, viande") do %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(6,56,128,0.3),rgba(0,0,0,0.6)), url('https://static.mensup.fr/photo_article/110038/63203/1200-L-des-bires-diffrencier.jpg')">
-        Biére Blonde
+  <div class="container-card">
+    <div class="card">
+     <%= link_to recipes_path(query: "poisson") do %>
+      <div class="card-img"></div>
+        <div class="card-info">
+          <div class="card-text">
+            <p class="text-title">Bière blanche</p>
+            <%# <p class="text-subtitle">This is a subtitle</p> %>
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 28 25">
+              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+            </svg>
+          </div>
       </div>
-    <% end %>
-    <%= link_to recipes_path(query: "poisson") do %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(6,56,128,0.3),rgba(0,0,0,0.6)), url('https://static.mensup.fr/photo_article/110038/63203/1200-L-des-bires-diffrencier.jpg')">
-        Biére Blanche
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="container-card">
+    <div class="card">
+     <%= link_to recipes_path(query: "sucré, viande") do %>
+      <div class="card-img"></div>
+        <div class="card-info">
+          <div class="card-text">
+            <p class="text-title">Bière blonde</p>
+            <%# <p class="text-subtitle">This is a subtitle</p> %>
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 28 25">
+              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+            </svg>
+          </div>
       </div>
-    <% end %>
-    <%= link_to recipes_path(query: "crustacé") do %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(6,56,128,0.3),rgba(0,0,0,0.6)), url('https://static.mensup.fr/photo_article/110038/63203/1200-L-des-bires-diffrencier.jpg')">
-        Biére Ambrée
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="container-card">
+    <div class="card">
+     <%= link_to recipes_path(query: "crustacé") do %>
+      <div class="card-img"></div>
+        <div class="card-info">
+          <div class="card-text">
+            <p class="text-title">Bière ambrée</p>
+            <%# <p class="text-subtitle">This is a subtitle</p> %>
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 28 25">
+              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+            </svg>
+          </div>
       </div>
-    <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="container-card">
+    <div class="card">
+      <div class="card-img"></div>
+        <div class="card-info">
+          <div class="card-text">
+            <p class="text-title">Bière brune</p>
+            <%# <p class="text-subtitle">This is a subtitle</p> %>
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 28 25">
+              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+            </svg>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="container-card">
+    <div class="card">
+      <div class="card-img"></div>
+        <div class="card-info">
+          <div class="card-text">
+            <p class="text-title">Bière noire</p>
+            <%# <p class="text-subtitle">This is a subtitle</p> %>
+          </div>
+          <div class="card-icon">
+            <svg viewBox="0 0 28 25">
+              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+            </svg>
+          </div>
+      </div>
+    </div>
   </div>
 </div>
