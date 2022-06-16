@@ -1,11 +1,17 @@
-All recipes
+
 
 <% params[:query].split(', ').each do |param| %>
-  <%= param %>
+  <% param %>
 <% end %>
 
-<% @recipes.each do |recipe| %>
-  <%= link_to recipe.name, recipe_path(recipe) %>
-  <%= recipe.difficulty_level %>
-  <%= recipe.prep_time %>
-<% end %>
+<div class="container-product">
+  <div class="card-product">
+  <% @recipes.each do |recipe| %>
+    <div class="card-product-infos">
+      <%= link_to recipe.name, recipe_path(recipe) %>
+      <p>Niveau de difficulté — <%= recipe.difficulty_level %></p>
+      <p>Temps de préparation — <%= recipe.prep_time %></p>
+    </div>
+    <% end %>
+  </div>
+</div>

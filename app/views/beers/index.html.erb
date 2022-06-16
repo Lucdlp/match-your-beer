@@ -1,13 +1,20 @@
-All beers
+<div class="title">
+  <h2>Voici les bières qui match avec ton repas</h2>
+</div>
 
 <% params[:query].split(', ').each do |param| %>
-  <%= param %>
+  <% param %>
 <% end %>
 
-
-<% @beers.each do |beer| %>
-  <%= link_to beer.name, beer_path(beer) %>
-  <%= beer.brewery %>
-  <%= beer.country %>
-  <%= beer.alcohol_level %>
-<% end %>
+<div class="container-product">
+  <div class="card-product">
+  <% @beers.each do |beer| %>
+    <div class="card-product-infos">
+      <%= link_to beer.name, beer_path(beer) %>
+      <p>Brasserie — <%= beer.brewery %></p>
+      <p>Taux d'alcool — <%= beer.alcohol_level %></p>
+      <p>IBU / amertume — <%= beer.ibu_level %></p>
+    </div>
+    <% end %>
+  </div>
+</div>
