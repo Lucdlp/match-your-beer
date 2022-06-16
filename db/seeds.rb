@@ -36,7 +36,10 @@ recipe = Recipe.create!(name: 'Truite', description: 'A delicious recipe', photo
 
 
 
-shop = Shop.create!(name: 'Caverne de la biére', address: '36 avenue beauregard, 74960 Annecy')
+shop = Shop.create!(name: 'Caverne de la biére', address: '1 rue de la Republique, 74960 Annecy')
+shop = Shop.create!(name: 'Taverne du baron', address: '92 rue Maubec, 64100 Bayonne')
+shop = Shop.create!(name: 'La riviere de la binouse', address: '25 rue Georges Lassalle, 64340 Boucau')
+shop = Shop.create!(name: 'VnB', address: '25 avenue Jean Leon Laporte, 64600 Anglet')
 
 
 puts "Beers created!"
