@@ -1,25 +1,267 @@
-// Specific CSS for your home-page
-#background-video {
-  width: 100vw;
-  object-fit: cover;
+// BANNER
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 650px;
 }
 
-.banner {
+.banner h1 {
+  margin: 0;
   color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
   text-align: center;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+// CARD-PRODUCT
+
+.container-product-beer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+  height: 600px;
+  background: #fff;
+  margin: 60px;
+  border-radius: 20px;
+}
+
+.container-product-beer .imgBx {
+  position: relative;
   display: flex;
   justify-content: center;
-
-  height: calc(100vh - 190px);
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background: #fffff;
+  transition: .3s linear;
 }
 
-.banner-video {
-  position: absolute;
-  top: 190px;
-  bottom: 0;
-}
-
-.banner-text {
+.container-product-beer .imgBx img {
   position: relative;
-  top: -80%;
+  width: 600px;
+  transform: rotate(-30deg);
+  left: -50px;
+  top: 60px;
+  transition: .9s linear;
+}
+
+.container-product-beer .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 80px;
+}
+
+.container-product-beer .details h2{
+  margin: 0;
+  padding: 0;
+  font-size: 2.4em;
+  line-height: 1em;
+  color: #444;
+  font-size: 42px;
+  font-weight: bolder;
+}
+
+.container-product-beer .details h2 span {
+  font-size: 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+}
+
+.container-product-beer .details p {
+  max-width: 85%;
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+
+.container-product-beer .details h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  color: #a2a2a2;
+  float: left;
+}
+.container-product-beer .details button {
+  background: #FEC10D;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  margin-top: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 40px;
+}
+
+//
+
+.container-product-recipe {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+  height: 600px;
+  background: #fff;
+  // margin: 60px;
+  border-radius: 20px;
+  margin-left: 410px;
+}
+
+.container-product-recipe .imgBx {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background: #fffff;
+  transition: .3s linear;
+}
+
+.container-product-recipe .imgBx img {
+  position: relative;
+  width: 700px;
+  transform: rotate(-30deg);
+  left: 50px;
+  top: 77px;
+  transition: .9s linear;
+}
+
+.container-product-recipe .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 80px;
+}
+
+.container-product-recipe .details h2{
+  margin: 0;
+  padding: 0;
+  font-size: 2.4em;
+  line-height: 1em;
+  color: #444;
+  font-size: 42px;
+  font-weight: bolder;
+}
+
+.container-product-recipe .details h2 span {
+  font-size: 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+}
+
+.container-product-recipe .details p {
+  max-width: 85%;
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+
+.container-product-recipe .details h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  color: #a2a2a2;
+  float: left;
+}
+.container-product-recipe .details button {
+  background: #FEC10D;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  margin-top: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 40px;
+}
+
+.product-colors span {
+  width: 26px;
+  height: 26px;
+  top: 7px;
+  margin-right: 12px;
+  left: 10px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.black {
+  background: #000;
+}
+
+.red {
+  background: #D5212E;
+}
+
+.orange {
+  background: #F18557;
+}
+
+.product-colors .active:after{
+  content: "";
+  width: 36px;
+  height: 36px;
+  border: 2px solid #000;
+  position: absolute;
+  border-radius: 50%;
+  box-sizing: border-box;
+  left: -5px;
+  top: -5px;
+}
+
+/* responsive */
+@media (max-width: 1080px) {
+  .container {
+      height: auto;
+  }
+  .container .imgBx {
+      padding: 40px;
+      box-sizing: border-box;
+      width: 100% !important;
+      height: auto;
+      text-align: center;
+      overflow: hidden;
+  }
+  .container .imgBx img {
+      left: initial;
+      max-width: 100%;
+      transform: rotate(0deg);
+  }
+  .details {
+      width: 100% !important;
+      height: auto;
+      padding: 20px;
+  }
+  .container .details p {
+      margin-left: 0;
+      max-width: 100%;
+  }
 }
