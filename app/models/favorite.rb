@@ -1,3 +1,2 @@
 class Favorite < ApplicationRecord
-
 end
