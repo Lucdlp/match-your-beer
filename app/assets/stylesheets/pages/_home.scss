@@ -1,25 +1,20 @@
 // BANNER
 .banner {
   background-size: cover;
-  background-position: center;
-  padding: 150px 0;
-  height: 650px;
+  height: 640px;
+  text-align: center;
+  padding-top: 30vh;
 }
 
 .banner h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
+  align-items: center;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #fff;
+  font-size: 36px;
+  line-height: 40px;
   text-align: center;
-}
-
-.banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-transform: none;
+  white-space: normal;
 }
 
 // CARD-PRODUCT
@@ -30,9 +25,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1200px;
-  height: 600px;
-  background: #fff;
-  margin: 60px;
+  height: 420px;
+  background: #dfe2d7;
+  margin: 100px;
   border-radius: 20px;
 }
 
@@ -43,14 +38,13 @@
   align-items: center;
   width: 50%;
   height: 50%;
-  background: #fffff;
   transition: .3s linear;
 }
 
 .container-product-beer .imgBx img {
   position: relative;
-  width: 600px;
-  transform: rotate(-30deg);
+  width: 550px;
+  transform: rotate(20deg);
   left: -50px;
   top: 60px;
   transition: .9s linear;
@@ -63,11 +57,9 @@
   width: 50%;
   height: 100%;
   box-sizing: border-box;
-  padding: 80px;
 }
 
 .container-product-beer .details h2{
-  margin: 0;
   padding: 0;
   font-size: 2.4em;
   line-height: 1em;
@@ -90,13 +82,6 @@
   margin-bottom: 36px;
 }
 
-.container-product-beer .details h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 2.5em;
-  color: #a2a2a2;
-  float: left;
-}
 .container-product-beer .details button {
   background: #FEC10D;
   color: #fff;
@@ -114,16 +99,17 @@
 //
 
 .container-product-recipe {
+  margin-top: 120px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1200px;
-  height: 600px;
-  background: #fff;
+  height: 420px;
+  background: #dfe2d7;
   // margin: 60px;
   border-radius: 20px;
-  margin-left: 410px;
+  margin-left: 390px;
 }
 
 .container-product-recipe .imgBx {
@@ -133,16 +119,15 @@
   align-items: center;
   width: 50%;
   height: 50%;
-  background: #fffff;
   transition: .3s linear;
 }
 
 .container-product-recipe .imgBx img {
   position: relative;
-  width: 700px;
-  transform: rotate(-30deg);
-  left: 50px;
-  top: 77px;
+  width: 650px;
+  // transform: rotate(30deg);
+  left: 10px;
+  top: 80px;
   transition: .9s linear;
 }
 
@@ -153,11 +138,10 @@
   width: 50%;
   height: 100%;
   box-sizing: border-box;
-  padding: 80px;
+  padding-left: 80px;
 }
 
 .container-product-recipe .details h2{
-  margin: 0;
   padding: 0;
   font-size: 2.4em;
   line-height: 1em;
@@ -180,13 +164,6 @@
   margin-bottom: 36px;
 }
 
-.container-product-recipe .details h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 2.5em;
-  color: #a2a2a2;
-  float: left;
-}
 .container-product-recipe .details button {
   background: #FEC10D;
   color: #fff;
@@ -199,42 +176,6 @@
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 40px;
-}
-
-.product-colors span {
-  width: 26px;
-  height: 26px;
-  top: 7px;
-  margin-right: 12px;
-  left: 10px;
-  border-radius: 50%;
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.black {
-  background: #000;
-}
-
-.red {
-  background: #D5212E;
-}
-
-.orange {
-  background: #F18557;
-}
-
-.product-colors .active:after{
-  content: "";
-  width: 36px;
-  height: 36px;
-  border: 2px solid #000;
-  position: absolute;
-  border-radius: 50%;
-  box-sizing: border-box;
-  left: -5px;
-  top: -5px;
 }
 
 /* responsive */
