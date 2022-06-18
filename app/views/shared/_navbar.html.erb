@@ -8,7 +8,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="nav">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="nav">
       <li>
         <%= link_to "Trouve ta bière", recipes_category_index_path, class: "nav_link" %>
       </li>
@@ -16,10 +18,6 @@
         <%= link_to "Trouve ton repas", beers_category_index_path, class: "nav_link" %>
       </li>
     </div>
-
-
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item dropdown">
