@@ -19,15 +19,21 @@ class BeersController < ApplicationController
     else
       @shops = Shop.all
     end
-
     # the `geocoded` scope filters only flats with coordinates (latitude & longitude)
     @markers = @shops.geocoded.map do |shop|
       {
         lat: shop.latitude,
         lng: shop.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { shop: shop }),
+        info_window: render_to_string(partial: "info_window_shop", locals: { shop: shop }),
         image_url: helpers.asset_url("beer.png")
       }
     end
+    user_marker =  {
+      lat: current_user.latitude,
+      lng: current_user.longitude,
+      info_window: render_to_string(partial: "info_window_user", locals: { current_user: current_user }),
+      image_url: helpers.asset_url("homme.png")
+    }
+    @markers = @markers << user_marker
   end
 end
