@@ -24,6 +24,12 @@ Voir les différents reviews sur la biére :
 <br>
 <br>
 <p>Ajouter le bouton favoris vers l'espace 'Current User'</p>
+
+<%= simple_form_for [ @beer, @favorite ] do |f| %>
+  <%= f.hidden_field :beer_id, value: @beer.id %>
+  <%= f.button :submit, "Ajouter aux favoris", class: "btn btn-primary", "data-disable-with" => "Envoie en cours.." %>
+<% end %>
+
 <br>
 <br>
 Voir les différents magasins :
@@ -37,7 +43,6 @@ Voir les différents magasins :
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>
-
 
 
 <div>

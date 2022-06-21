@@ -32,6 +32,7 @@ class BeersController < ApplicationController
           image_url: helpers.asset_url("homme.png")
         }
       @markers << user_marker
+
     else
       @shops = Shop.all
       @markers = @shops.geocoded.map do |shop|
@@ -43,5 +44,9 @@ class BeersController < ApplicationController
         }
       end
     end
+    
+    @favorite = Favorite.new
+    @favorite.beer = @beer
+    
   end
 end

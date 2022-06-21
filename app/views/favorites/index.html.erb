@@ -1,0 +1,24 @@
+
+Vos Biéres Favorites
+
+<br>
+<br>
+<br>
+
+<% @my_favorite_beers.each do |favorite| %>
+  <%= favorite.beer.name %>
+<% end %>
+
+<br>
+<br>
+<br>
+
+Vos Recettes Favorites
+
+<br>
+<br>
+<br>
+
+<% @my_favorite_recipes.each do |favorite| %>
+  <%= favorite.recipe.name %>
+<% end %>

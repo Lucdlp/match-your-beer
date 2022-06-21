@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   resources :users, only: [:new, :create]
   resources :beers_category, only: [:index]
+  resources :favorites, only: [:index]
   resources :beers, only: [:index, :show] do
     resources :favorites, only: [:create]
     resources :reviews, only: [:index, :new, :create]

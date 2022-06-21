@@ -1,5 +1,12 @@
-<div class="title">
+
   <h2>Recette de votre repas : <%= @recipe.name %></h2>
+
+
+<%= simple_form_for [ @recipe, @favorite ] do |f| %>
+  <%= f.hidden_field :recipe_id, value: @recipe.id %>
+  <%= f.button :submit, "Ajouter aux favoris", class: "btn btn-primary", "data-disable-with" => "Envoie en cours.." %>
+<% end %>
+
 </div>
 <div>
 <% @recipe.reviews.each do |review| %>
@@ -18,3 +25,4 @@
   <% end %>
 <% end %>
 </div>
+
