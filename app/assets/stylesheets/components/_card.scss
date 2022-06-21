@@ -1,4 +1,8 @@
-.container-flex {
+#title-category {
+  padding: 20px 0 40px;
+}
+
+.container-cat {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 60px;
@@ -8,22 +12,24 @@
 .card-category {
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 400;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  padding-top: 20px;
 }
 
-.link-div a {
+.link-cat a {
   text-decoration: none;
 }
 
-.link-div:hover {
+.link-cat:hover {
   box-shadow: 0 10px 20px 4px rgba(35, 35, 35, .1);
+  border-radius: 20px;
 }
