@@ -1,5 +1,5 @@
 <div class="title">
-  <h2>Voici les repas qui match avec ta bière</h2>
+  <h2>Infos de ta bière</h2>
 </div>
 
 <div class="container-product">
@@ -12,7 +12,14 @@
     </div>
   </div>
 </div>
+<div>
+Voir les différents reviews sur la biére :
 
+<% @beer.reviews.each do |review| %>
+  <%= review.rating %>
+  <%= review.comment %>
+<% end %>
+</div>
 <br>
 <br>
 <br>
@@ -35,4 +42,16 @@ Voir les différents magasins :
   data-controller="mapbox"
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+</div>
+
+
+<div>
+<h4><strong>Commente ta Bière</strong></h4>
+<% if current_user.present? %>
+  <%= simple_form_for [ @beer, @review ] do |f| %>
+    <%= f.input :rating, label: "Note", as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
+    <%= f.input :comment, label: "Commentaire" %>
+    <%= f.submit "Envoyer", class: "btn btn-primary" %>
+  <% end %>
+<% end %>
 </div>

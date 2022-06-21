@@ -13,6 +13,7 @@ class BeersController < ApplicationController
     @beer = Beer.find(params[:id])
     @shops = Shop.all
     @review = Review.new
+    @reviews = Review.all
     if user_signed_in?
       @shops = Shop.near([current_user.latitude, current_user.longitude], 50, units: :km)
       @shops = Shop.all if @shops.empty?
@@ -45,7 +46,7 @@ class BeersController < ApplicationController
         image_url: helpers.asset_url("beer.png")
       }
     end
-    user_marker =  {
+    user_marker = {
       lat: current_user.latitude,
       lng: current_user.longitude,
       info_window: render_to_string(partial: "info_window_user", locals: { current_user: current_user }),

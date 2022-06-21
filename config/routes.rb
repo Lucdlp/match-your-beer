@@ -5,15 +5,15 @@ Rails.application.routes.draw do
   resources :beers_category, only: [:index]
   resources :favorites, only: [:index]
   resources :beers, only: [:index, :show] do
-    resources :reviews, only: [:create]
-    resources :recipes, only: [:index]
     resources :favorites, only: [:create]
+    resources :reviews, only: [:index, :new, :create]
+    resources :recipes, only: [:index]
     resources :shops, only: [:index, :show]
   end
   resources :recipes_category, only: [:index]
   resources :recipes, only: [:index, :show] do
-    resources :reviews, only: [:create]
     resources :favorites, only: [:create]
+    resources :reviews, only: [:index, :new, :create]
     resources :beers, only: [:index]
 
   end
