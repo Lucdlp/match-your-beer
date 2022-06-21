@@ -1,5 +1,6 @@
 // BANNER
 .banner {
+  background-color: #34363a;
   background-size: cover;
   height: 640px;
   text-align: center;
@@ -7,15 +8,52 @@
 }
 
 .banner h1 {
-  align-items: center;
-  font-family: 'Space Grotesk', sans-serif;
   color: #fff;
   font-size: 36px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: none;
-  white-space: normal;
+  font-weight: 400;
+  padding-bottom: 30px;
 }
+
+.column-banner-left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-right: 20px;
+  width: 50%;
+}
+
+.column-banner-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-left: 20px;
+  width: 50%;
+}
+
+.btn-banner {
+  color:#34363a;
+  border-radius: 20px;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: #dfe2d7;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.btn-banner:hover {
+  color:#34363a;
+  box-shadow:  10px 10px 30px #34363a4f,
+}
+
 
 // CARD-PRODUCT
 
@@ -27,7 +65,7 @@
   width: 1200px;
   height: 420px;
   background: #dfe2d7;
-  margin: 100px;
+  margin: 100px 90px;
   border-radius: 20px;
 }
 
@@ -63,9 +101,8 @@
   padding: 0;
   font-size: 2.4em;
   line-height: 1em;
-  color: #444;
-  font-size: 42px;
-  font-weight: bolder;
+  font-size: 36px;
+  font-weight: 500;
 }
 
 .container-product-beer .details h2 span {
@@ -101,7 +138,7 @@
 .container-product-beer .details button,
 .btn-product:hover {
   color: white;
-  box-shadow:  10px 10px 30px #34363a4f,
+  box-shadow: 5px 5px 30px #34363a4f,
 
 }
 //
@@ -117,7 +154,7 @@
   background: #dfe2d7;
   // margin: 60px;
   border-radius: 20px;
-  margin-left: 390px;
+  margin-left: 360px;
 }
 
 .container-product-recipe .imgBx {
@@ -153,9 +190,8 @@
   padding: 0;
   font-size: 2.4em;
   line-height: 1em;
-  color: #444;
-  font-size: 42px;
-  font-weight: bolder;
+  font-size: 36px;
+  font-weight: 500;
 }
 
 .container-product-recipe .details h2 span {
@@ -179,8 +215,8 @@
   outline: none;
   padding: 15px 20px;
   margin-top: 5px;
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-size: 14px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 40px;
@@ -228,13 +264,12 @@
 .container-card-match {
   width: 80%;
   margin-right: auto;
-  margin-bottom: 85px;
   margin-left: auto;
   text-align: center;
 }
 
 .label {
-  margin-bottom: 10px;
+  padding-top: 120px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
@@ -248,10 +283,9 @@
   margin-top: 0px;
   margin-bottom: 40px;
   font-family: 'Space Grotesk', sans-serif;
-  color: #34363a;
   font-size: 36px;
   line-height: 50px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   text-transform: none;
 }
@@ -259,9 +293,7 @@
 .container-match img,
 .img-match {
   display: inline-block;
-  max-width: 100%;
   height: 64%;
-  border: 0;
 }
 
 .col {
@@ -280,10 +312,9 @@
 .label-match {
   display: block;
   overflow: visible;
-  max-width: 320px;
-  min-width: 250px;
+  width: fit-content;
   margin: 20px auto 0px;
-  padding: 3px 0px;
+  padding: 5px 20px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -292,7 +323,6 @@
   border-radius: 20px;
   background-color: #fff;
   font-family: 'Space Grotesk', sans-serif;
-  color: #34363a;
   font-size: 18px;
   line-height: 26px;
   font-weight: 500;
@@ -304,15 +334,10 @@
 .category-title {
   display: flex;
   margin-left: 20px;
-  font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  color: #34363a;
   font-size: 10px;
   line-height: 14px;
   font-weight: 600;
-  text-align: left;
   letter-spacing: 3px;
-  text-decoration: none;
-  text-indent: 0px;
   text-transform: uppercase;
   column-count: 0;
 }
@@ -321,7 +346,6 @@
   margin-left: 20px;
   padding-bottom: 10px;
   font-family: 'Space Grotesk', sans-serif;
-  color: #34363a;
   font-size: 18px;
   font-weight: 500;
   text-align: left;
@@ -379,51 +403,39 @@
 
 // TOP BEERS
 
-
-.title-top {
-    object-fit: fill;
-}
-
 .row-top {
   display: flex;
-  width: auto;
-  max-width: none;
-  min-width: 0px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0px;
   justify-content: space-evenly;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
 }
 
 .columns-top {
+  padding: 20px 0 26px;
   position: relative;
-  right: auto;
-  z-index: auto;
   display: flex;
-  padding-right: 10px;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
-  align-content: center;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  border: 0px solid transparent;
-  border-radius: 20px;
-  background-color: transparent;
-  text-align: center;
+  grid-row-gap: 14px;
   width: 250px;
+  border-radius: 20px;
 }
+
+.columns-top:hover {
+  background-color: #fff;
+  box-shadow: 5px 5px 30px #34363a1c,
+}
+
 
 .container-top img,
 .img-top {
-  height: 250px;
+  height: 220px;
+}
+
+.title-top {
+  object-fit: fill;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
 }
