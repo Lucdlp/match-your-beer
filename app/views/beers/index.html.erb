@@ -1,20 +1,51 @@
-<div class="title">
-  <h2>Voici les bières qui match avec ton repas</h2>
-</div>
+<div class="container">
 
-<% params[:query].split(', ').each do |param| %>
-  <% param %>
-<% end %>
+  <div class="title" id="title-product">
+    <h2>Voici les bières qui match avec ton repas</h2>
+  </div>
 
-<div class="container-product">
-  <div class="card-product">
+  <% params[:query].split(', ').each do |param| %>
+    <% param %>
+  <% end %>
+
   <% @beers.each do |beer| %>
-    <div class="card-product-infos">
-      <%= link_to beer.name, beer_path(beer) %>
-      <p>Brasserie — <%= beer.brewery %></p>
-      <p>Taux d'alcool — <%= beer.alcohol_level %></p>
-      <p>IBU / amertume — <%= beer.ibu_level %></p>
+
+  <div class="wrapper">
+  <%= link_to beer_path(beer), class:"link-product" do %>
+  <div class="container-product-list">
+    <div class="top"></div>
+    <div class="bottom">
+      <div class="details">
+        <h1><%= beer.name %></h1>
+      </div>
+    </div>
+  </div>
+  <div class="inside">
+    <div class="icon"><i class="fas fa-info fa-lg"></i></div>
+    <div class="contents">
+      <div class="row">
+        <div class="column-3 col col-6">
+          <div class="category-title">Brasserie</div>
+          <div class="category-text"><%= beer.brewery %></div>
+          <div class="category-title">Type</div>
+          <div class="category-text"><%= beer.color %></div>
+          <div class="category-title">Style</div>
+          <div class="category-text"><%= beer.style %></div>
+        </div>
+        <div class="col col-6">
+          <div class="category-title">Origine</div>
+          <div class="category-text"><%= beer.country %></div>
+          <div class="category-title">Alcool</div>
+          <div class="category-text"><%= beer.alcohol_level %> %</div>
+          <div class="category-title">IBU</div>
+          <div class="category-text"><%= beer.ibu_level %></div>
+        </div>
+      </div>
     </div>
     <% end %>
   </div>
+
+  <% end %>
+</div>
+
 </div>
