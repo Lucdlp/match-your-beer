@@ -7,17 +7,33 @@
   <div class="container-cat">
 
   <div class="link-cat">
-  <%= link_to beers_path(query: "viande, poulet, carpaccio, veau, volaille, canard, abat, viande, porc, gibier, agneau") do %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655847499/cat-viandes_wnlbuy.webp">
-      Viandes
+  <%= link_to beers_path(query: "fromage frais, fromage à pâte molle, fromage à pâte dure, fromage persillé") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850180/cat-fromages_o9yosh.webp)">
+      Fromages
     </div>
     <% end %>
   </div>
 
   <div class="link-cat">
-  <%= link_to beers_path(query: "poisson, ceviche, poisson gras") do %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655848001/cat-poissons_oylyvm.webp)">
-      Poissons
+  <%= link_to beers_path(query: "charcuterie, pâté") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1656017410/cat-charcuterie_zmdb2b.webp)">
+      Charcuteries
+    </div>
+    <% end %>
+  </div>
+
+  <div class="link-cat">
+  <%= link_to beers_path(query: "barbecue, grillade") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1656016239/cat-bbq_vofrct.webp)">
+      Barbecue
+    </div>
+    <% end %>
+  </div>
+
+  <div class="link-cat">
+  <%= link_to beers_path(query: "viande, poulet, carpaccio, veau, volaille, canard, abat, viande, porc, gibier, agneau") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655847499/cat-viandes_wnlbuy.webp">
+      Viandes
     </div>
     <% end %>
   </div>
@@ -29,6 +45,31 @@
     </div>
     <% end %>
   </div>
+
+  <div class="link-cat">
+  <%= link_to beers_path(query: "plat épicé") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1656017279/cat-epices_r3qxvw.webp)">
+      Plats épicés
+    </div>
+    <% end %>
+  </div>
+
+  <div class="link-cat">
+  <%= link_to beers_path(query: "fruit de mer") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1656016771/cat-fruitmer_p3dvew.webp)">
+      Fruits de mer
+    </div>
+    <% end %>
+  </div>
+
+  <div class="link-cat">
+  <%= link_to beers_path(query: "poisson, ceviche, poisson gras, poisson blanc") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655848001/cat-poissons_oylyvm.webp)">
+      Poissons
+    </div>
+    <% end %>
+  </div>
+
 
   <div class="link-cat">
   <%= link_to beers_path(query: "légume, crudité, salade") do %>
@@ -46,16 +87,8 @@
     <% end %>
   </div>
 
-    <div class="link-cat">
-  <%= link_to beers_path(query: "fromage frais, fromage à pâte molle, fromage à pâte dure, fromage persillé") do %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850180/cat-fromages_o9yosh.webp)">
-      Fromages
-    </div>
-    <% end %>
-  </div>
-
   <div class="link-cat">
-  <%= link_to beers_path(query: "déssert, caramel, chocolat, tiramisu, caramel, spéculoos, crème fraîche") do %>
+  <%= link_to beers_path(query: "dessert, caramel, chocolat, tiramisu, caramel, spéculoos, crème fraîche") do %>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
       Sucrés
     </div>
@@ -63,41 +96,9 @@
   </div>
 
   <div class="link-cat">
-  <%= link_to beers_path(query: "fruit de mer") do %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
-      Fruits de mer
-    </div>
-    <% end %>
-  </div>
-
-  <div class="link-cat">
-  <%= link_to beers_path(query: "fruit, passion, noix de coco, amande grillée, fruit rouge") do %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
+  <%= link_to beers_path(query: "fruit, passion, noix de coco, amande, fruit rouge") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1656017125/cat-fruits_oajzfb.webp)">
       Fruits
-    </div>
-    <% end %>
-  </div>
-
-  <div class="link-cat">
-  <%= link_to beers_path(query: "plat épicé") do %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
-      Epicés
-    </div>
-    <% end %>
-  </div>
-
-  <div class="link-cat">
-  <%= link_to beers_path(query: "charcuterie, pâté") do %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
-      Charcuteries
-    </div>
-    <% end %>
-  </div>
-
-  <div class="link-cat">
-  <%= link_to beers_path(query: "barbecue") do %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
-      Barbecue
     </div>
     <% end %>
   </div>
