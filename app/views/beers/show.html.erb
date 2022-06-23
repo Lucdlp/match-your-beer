@@ -1,57 +1,61 @@
-<div class="title">
-  <h2>Infos de ta bière</h2>
-</div>
+<div class="container">
 
-<div class="container-product">
-  <div class="card-product">
-    <div class="card-product-infos">
-      <p><%= @beer.name %></p>
-      <p>Brasserie — <%= @beer.brewery %></p>
-      <p>Taux d'alcool — <%= @beer.alcohol_level %></p>
-      <p>IBU / amertume — <%= @beer.ibu_level %></p>
+  <div class="title">
+    <h2>Infos de ta bière</h2>
+  </div>
+
+  <div class="container-product">
+    <div class="card-product">
+      <div class="card-product-infos">
+        <p><%= @beer.name %></p>
+        <p>Brasserie — <%= @beer.brewery %></p>
+        <p>Taux d'alcool — <%= @beer.alcohol_level %></p>
+        <p>IBU / amertume — <%= @beer.ibu_level %></p>
+      </div>
     </div>
   </div>
-</div>
-<div>
-Voir les différents reviews sur la biére :
+  <div>
+  Voir les différents reviews sur la biére :
 
-<% @beer.reviews.each do |review| %>
-  <%= review.rating %>
-  <%= review.comment %>
-<% end %>
-</div>
-<br>
-<br>
-<br>
-<p>Ajouter le bouton favoris vers l'espace 'Current User'</p>
-
-<%= simple_form_for [ @beer, @favorite ] do |f| %>
-  <%= f.hidden_field :beer_id, value: @beer.id %>
-  <%= f.button :submit, "Ajouter aux favoris", class: "btn btn-primary", "data-disable-with" => "Envoie en cours.." %>
-<% end %>
-
-<br>
-<br>
-Voir les différents magasins :
-<% @shops.each do |shop| %>
-<%= shop.name %>
-<% end %>
-
-<br>
-<div style="width: 100%; height: 600px;"
-  data-controller="mapbox"
-  data-mapbox-markers-value="<%= @markers.to_json %>"
-  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-</div>
-
-
-<div>
-<h4><strong>Commente ta Bière</strong></h4>
-<% if current_user.present? %>
-  <%= simple_form_for [ @beer, @review ] do |f| %>
-    <%= f.input :rating, label: "Note", as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
-    <%= f.input :comment, label: "Commentaire" %>
-    <%= f.submit "Envoyer", class: "btn btn-primary" %>
+  <% @beer.reviews.each do |review| %>
+    <%= review.rating %>
+    <%= review.comment %>
   <% end %>
-<% end %>
+  </div>
+  <br>
+  <br>
+  <br>
+  <p>Ajouter le bouton favoris vers l'espace 'Current User'</p>
+
+  <%= simple_form_for [ @beer, @favorite ] do |f| %>
+    <%= f.hidden_field :beer_id, value: @beer.id %>
+    <%= f.button :submit, "Ajouter aux favoris", class: "btn btn-primary", "data-disable-with" => "Envoie en cours.." %>
+  <% end %>
+
+  <br>
+  <br>
+  Voir les différents magasins :
+  <% @shops.each do |shop| %>
+  <%= shop.name %>
+  <% end %>
+
+  <br>
+  <div style="width: 100%; height: 600px;"
+    data-controller="mapbox"
+    data-mapbox-markers-value="<%= @markers.to_json %>"
+    data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+
+
+  <div>
+  <h4><strong>Commente ta Bière</strong></h4>
+  <% if current_user.present? %>
+    <%= simple_form_for [ @beer, @review ] do |f| %>
+      <%= f.input :rating, label: "Note", as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
+      <%= f.input :comment, label: "Commentaire" %>
+      <%= f.submit "Envoyer", class: "btn btn-primary" %>
+    <% end %>
+  <% end %>
+  </div>
+
 </div>

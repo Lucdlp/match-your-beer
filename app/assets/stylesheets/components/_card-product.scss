@@ -2,36 +2,110 @@
   display: flex;
 }
 
-.card-product {
-  overflow: hidden;
-  height: 120px;
+#title-product {
+  padding: 20px 0 40px;
+}
+
+.wrapper{
   width: 250px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-}
+  height: 300px;
+  background: #DFE2D7;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+  &:hover{
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+  }
 
-.card-product img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
-}
+  .container-product-list {
+    width:100%;
+    height:100%;
+    .top{
+      height: 70%;
+      width: 100%;
+      background: url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655229242/hoegaarden_sgoiv5.webp) no-repeat bottom;
+      background-size: 100%;
+    }
+    .bottom{
+      width: 100%;
+      height: 30%;
+      .details {
+        height:100%;
+        width: 100%;
+        background: #DFE2D7;
+        position:relative;
+        padding-top: 25px;
+        float: center;
+          h1 {
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 
-.card-product h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
+  .link-product {
+    text-decoration: none;
+    color: #34363A;
+  }
 
-.card-product p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
+  .link-product:hover {
+    color: #34363A;
+  }
 
-.card-product .card-product-infos {
-  padding: 16px;
-}
+ .bottom, .details a {
+    text-decoration: none;
+  }
+
+  .inside{
+    z-index:9;
+    background: #FEC10D;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    border-radius: 0px 0px 200px 200px;
+    transition: all 0.5s, border-radius 2s, top 1s;
+    overflow: hidden;
+    .icon{
+      position:absolute;
+      right:93px;
+      top:85px;
+      color: #34363A;
+      opacity: 1;
+    }
+    &:hover{
+      width:100%;
+      right:0;
+      top:0;
+      border-radius: 0;
+      height:70%;
+      .icon{
+        opacity: 0;
+        right:15px;
+        top:15px;
+      }
+      .contents{
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(0);
+      }
+    }
+    .contents{
+      padding: 5%;
+      opacity: 0;
+      transform: scale(0.5);
+      transform: translateY(-200%);
+      transition: opacity 0.2s, transform 0.8s;
+      .row {
+        padding-top: 10px;
+      }
+    }
+  }
