@@ -7,7 +7,7 @@
   <div class="container-cat">
 
   <div class="link-cat">
-  <%= link_to beers_path(query: "sucré, viande") do %>
+  <%= link_to beers_path(query: "viande, poulet, carpaccio, veau, volaille, canard, abat, viande, porc, gibier, agneau") do %>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655847499/cat-viandes_wnlbuy.webp">
       Viandes
     </div>
@@ -15,15 +15,15 @@
   </div>
 
   <div class="link-cat">
-  <%= link_to beers_path(query: "poisson") do %>
+  <%= link_to beers_path(query: "poisson, ceviche, poisson gras") do %>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655848001/cat-poissons_oylyvm.webp)">
-      Poissons et crustacés
+      Poissons
     </div>
     <% end %>
   </div>
 
   <div class="link-cat">
-  <%= link_to beers_path(query: "poisson") do %>
+  <%= link_to beers_path(query: "plat mijoté") do %>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655848711/cat-mijotes_d43ijc.webp)">
     Plats mijotés
     </div>
@@ -31,7 +31,7 @@
   </div>
 
   <div class="link-cat">
-  <%= link_to beers_path(query: "crustacé") do %>
+  <%= link_to beers_path(query: "légume, crudité, salade") do %>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655849279/cat-legumes_aqh4li.webp)">
       Légumes
     </div>
@@ -39,7 +39,7 @@
   </div>
 
   <div class="link-cat">
-  <%= link_to beers_path(query: "crustacé") do %>
+  <%= link_to beers_path(query: "hamburger, fast-food, pizza") do %>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655849403/cat-fastfood_qzcgzs.webp)">
       Fast-food
     </div>
@@ -47,7 +47,7 @@
   </div>
 
     <div class="link-cat">
-  <%= link_to beers_path(query: "crustacé") do %>
+  <%= link_to beers_path(query: "fromage frais, fromage à pâte molle, fromage à pâte dure, fromage persillé") do %>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850180/cat-fromages_o9yosh.webp)">
       Fromages
     </div>
@@ -55,9 +55,49 @@
   </div>
 
   <div class="link-cat">
-  <%= link_to beers_path(query: "crustacé") do %>
+  <%= link_to beers_path(query: "déssert, caramel, chocolat, tiramisu, caramel, spéculoos, crème fraîche") do %>
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
-      Desserts
+      Sucrés
+    </div>
+    <% end %>
+  </div>
+
+  <div class="link-cat">
+  <%= link_to beers_path(query: "fruit de mer") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
+      Fruits de mer
+    </div>
+    <% end %>
+  </div>
+
+  <div class="link-cat">
+  <%= link_to beers_path(query: "fruit, passion, noix de coco, amande grillée, fruit rouge") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
+      Fruits
+    </div>
+    <% end %>
+  </div>
+
+  <div class="link-cat">
+  <%= link_to beers_path(query: "plat épicé") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
+      Epicés
+    </div>
+    <% end %>
+  </div>
+
+  <div class="link-cat">
+  <%= link_to beers_path(query: "charcuterie, pâté") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
+      Charcuteries
+    </div>
+    <% end %>
+  </div>
+
+  <div class="link-cat">
+  <%= link_to beers_path(query: "barbecue") do %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655850465/cat-desserts_qfsqwn.webp)">
+      Barbecue
     </div>
     <% end %>
   </div>
