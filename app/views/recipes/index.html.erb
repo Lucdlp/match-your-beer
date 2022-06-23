@@ -1,19 +1,45 @@
-<div class="title">
-  <h2>Voici les repas qui match avec ta bière</h2>
-</div>
+<div class="container">
 
-<% params[:query].split(', ').each do |param| %>
-  <% param %>
-<% end %>
+  <div class="title" id="title-product">
+    <h2>Les repas qui match avec ta bière</h2>
+  </div>
 
-<div class="container-product">
-  <div class="card-product">
+  <div class="container-product">
+
+  <% params[:query].split(', ').each do |param| %>
+    <% param %>
+  <% end %>
+
   <% @recipes.each do |recipe| %>
-    <div class="card-product-infos">
-      <%= link_to recipe.name, recipe_path(recipe) %>
-      <p>Niveau de difficulté — <%= recipe.difficulty_level %></p>
-      <p>Temps de préparation — <%= recipe.prep_time %></p>
+
+  <div class="wrapper">
+  <%= link_to recipe_path(recipe), class:"link-product" do %>
+  <div class="container-product-list">
+    <div class="top">
+    <img class="card-product-img", src="https://res.cloudinary.com/dwzspwy7e/image/upload/v1656016771/cat-fruitmer_p3dvew.webp"/>
+    </div>
+    <div class="bottom">
+      <div class="details">
+        <h1><%= recipe.name %></h1>
+      </div>
+    </div>
+  </div>
+  <div class="inside">
+    <div class="icon"><i class="fas fa-info fa-lg"></i></div>
+    <div class="contents">
+      <div class="row">
+          <div class="product-title">Niveau de difficulté</div>
+          <div class="product-text"><%= recipe.difficulty_level %></div>
+          <div class="product-title">Temps de préparation</div>
+          <div class="product-text"><%= recipe.prep_time %> min</div>
+        </div>
+      </div>
     </div>
     <% end %>
+  </div>
+
+  <% end %>
+  </div>
+
   </div>
 </div>

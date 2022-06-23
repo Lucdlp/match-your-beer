@@ -401,6 +401,30 @@
   align-items: baseline;
 }
 
+abbr {
+  position: relative;
+  text-decoration: none !important;
+}
+
+abbr:hover::after {
+  background: #fff;
+  border-radius: 10px;
+  bottom: 100%;
+  content: attr(title);
+  display: block;
+  left: 100%;
+  padding: 1em;
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+  font-size: 11px;
+  letter-spacing: 0;
+  box-shadow: 5px 5px 30px #34363a4f;
+}
+
+#icon-bulle {
+  padding-left: 4px;
+}
 
 // TOP BEERS
 

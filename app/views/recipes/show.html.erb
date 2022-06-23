@@ -1,28 +1,32 @@
+<div class="container">
 
-  <h2>Recette de votre repas : <%= @recipe.name %></h2>
+  <div class="title" id="title-product">
+    <h2>Recette — <%= @recipe.name %></h2>
+  </div>
 
+  <div>
+    <%= simple_form_for [ @recipe, @favorite ] do |f| %>
+      <%= f.hidden_field :recipe_id, value: @recipe.id %>
+      <%= f.button :submit, "Ajouter aux favoris", class: "btn btn-primary", "data-disable-with" => "Envoie en cours.." %>
+    <% end %>
+  </div>
 
-<%= simple_form_for [ @recipe, @favorite ] do |f| %>
-  <%= f.hidden_field :recipe_id, value: @recipe.id %>
-  <%= f.button :submit, "Ajouter aux favoris", class: "btn btn-primary", "data-disable-with" => "Envoie en cours.." %>
-<% end %>
-
-</div>
-<div>
-<% @recipe.reviews.each do |review| %>
-  <%= review.rating %>
-  <%= review.comment %>
-<% end %>
-</div>
-
-<div>
-<h4><strong>Commente ta Recette</strong></h4>
-<% if current_user.present? %>
-  <%= simple_form_for [ @recipe, @review ] do |f| %>
-    <%= f.input :rating, label: "Note",as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
-    <%= f.input :comment, label: "Commentaire" %>
-    <%= f.submit "Envoyer", class: "btn btn-primary" %>
+  <div>
+  <% @recipe.reviews.each do |review| %>
+    <%= review.rating %>
+    <%= review.comment %>
   <% end %>
-<% end %>
-</div>
+  </div>
 
+  <div>
+  <h4><strong>Commente ta Recette</strong></h4>
+  <% if current_user.present? %>
+    <%= simple_form_for [ @recipe, @review ] do |f| %>
+      <%= f.input :rating, label: "Note",as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
+      <%= f.input :comment, label: "Commentaire" %>
+      <%= f.submit "Envoyer", class: "btn btn-primary" %>
+    <% end %>
+  <% end %>
+  </div>
+
+</div>

@@ -1,24 +1,21 @@
+<div class="container">
 
-Vos Biéres Favorites
+  <div class="title" id="title-product">
+    <h2>Vos favoris</h2>
+  </div>
 
-<br>
-<br>
-<br>
+  <div>
+    <p>Vos bières préférées</p>
+    <% @my_favorite_beers.each do |favorite| %>
+      <%= favorite.beer.name %>
+    <% end %>
+  </div>
 
-<% @my_favorite_beers.each do |favorite| %>
-  <%= favorite.beer.name %>
-<% end %>
+    <div>
+    <p>Vos recettes préférées</p>
+    <% @my_favorite_recipes.each do |favorite| %>
+      <%= favorite.recipe.name %>
+    <% end %>
+  </div>
 
-<br>
-<br>
-<br>
-
-Vos Recettes Favorites
-
-<br>
-<br>
-<br>
-
-<% @my_favorite_recipes.each do |favorite| %>
-  <%= favorite.recipe.name %>
-<% end %>
+</div>
