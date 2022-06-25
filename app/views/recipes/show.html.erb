@@ -1,10 +1,15 @@
 <div class="container">
-  <div class="row">
+  <div class="row-recipe">
     <div class="column-recipe">
-      <h2><%= @recipe.name %></h2>
       <img src="https://i.pinimg.com/736x/06/dc/96/06dc9657210de528e6fb34d7b1d37ee3.jpg" alt="">
     </div>
-    <div class="column-recipe" style="column-count: 2; padding: 100px 35px; text-align: left; column-fill: auto;" >
+    <div class="column-recipe" style="padding: 15px 35px; text-align: left; column-fill: auto; height: 400px; overflow-y: auto; " >
+      <div class="predes">
+        <h1><%= @recipe.name %></h1>
+        <p><i class="fas fa-star"></i> <strong><%=@recipe.average_rating%></strong> / 5</p>
+        <h4><%= @recipe.prep_time %> minutes</h4>
+        <h4><%= @recipe.difficulty_level %></h4>
+      </div>
       <p>ÉTAPE 1
           Séparer les blancs des jaunes d'oeufs.
 
@@ -26,17 +31,29 @@
 
           ÉTAPE 8
           Mettre au réfrigérateur 4 heures minimum puis déguster frais.
+
+          ÉTAPE 4
+          Monter les blancs en neige et les incorporer délicatement à la spatule au mélange précédent. Réserver. ÉTAPE 5
+          Mouiller les biscuits dans le café rapidement avant d'en tapisser le fond du plat.
+
+          ÉTAPE 6
+          Recouvrir d'une couche de crème au mascarpone puis répéter l'opération en alternant couche de biscuits et couche de crème en terminant par cette dernière.
+
+          ÉTAPE 7
+          Saupoudrer de cacao.
+
+          ÉTAPE 8
+          Mettre au réfrigérateur 4 heures minimum puis déguster frais.
         </p>
-        <div class="fav-btn">
-    <%= simple_form_for [ @recipe, @favorite ] do |f| %>
+    </div>
+    <div class="fav-btn">
+      <%= simple_form_for [ @recipe, @favorite ] do |f| %>
       <%= f.hidden_field :recipe_id, value: @recipe.id %>
       <%= f.button :submit, "Ajouter aux favoris", class: "btn btn-secondary", "data-disable-with" => "Envoie en cours.." %>
-    <% end %>
-    </div>
+      <% end %>
     </div>
   </div>
-  <div>
-  <div class="row justify-content-center" style="margin-top : 20px">
+  <div class="row-recipe justify-content-center" style="margin-top : 20px;">
     <div class="col-6 col-sm-4">
       <% if current_user.present? %>
         <h4><strong>Laisser un avis</strong></h4>
@@ -44,20 +61,15 @@
       <%= f.input :rating, label: "Note",as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
       <%= f.input :comment, label: "Commentaire" %>
       <%= f.submit "Envoyer", class: "btn btn-primary" %>
-    <% end %>
-    <% else %>
-   <h3 style="text-align : left; padding-top: 12%;">Vous devez vous <a href="<%= new_user_session_path%>" style="text-decoration: none; color: #FFC20E;"><strong>connecter</strong></a> ou vous <a href="<%= new_user_path %>" style="text-decoration: none; color: #FFC20E;"><strong>inscrire</strong></a> sur Match Your Beer pour laisser un avis.</h3>
-  <% end %>
+      <% end %>
+      <% else %>
+        <h3 style="text-align : left; padding-top: 12%;">Vous devez vous <a href="<%= new_user_session_path%>" style="text-decoration: none; color: #FFC20E;"><strong>connecter</strong></a> ou vous <a href="<%= new_user_path %>" style="text-decoration: none; color: #FFC20E;"><strong>inscrire</strong></a> sur Match Your Beer pour laisser un avis.</h3>
+      <% end %>
+    </div>
+    <div class="col-8 col-sm-4" style="padding-left : 20px; height: 140px; overflow-y: scroll; align-self: center;">
+      <% @recipe.reviews.each do |review| %>
+        <p><i class="fas fa-star"></i> <strong><%=review.rating%></strong> / 5 - <%= review.comment %></p>
+      <% end %>
+    </div>
   </div>
-  <div class="col-8 col-sm-4" style="padding-left : 20px; height: 250px;
-    overflow-y: scroll;">
-    <% @recipe.reviews.each do |review| %>
-    <p><i class="fas fa-star"></i> <strong><%=review.rating%></strong> / 5 - <%= review.comment %></p>
-
-  <% end %>
-  </div>
-  </div>
-  </div>
-  </div>
-
 </div>

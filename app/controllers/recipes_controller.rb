@@ -11,12 +11,8 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
-
-
     @favorite = Favorite.new
     @favorite.recipe = @recipe
-
     @review = Review.new
-
   end
 end
