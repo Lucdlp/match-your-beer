@@ -1,14 +1,21 @@
-<div class="container">
+<div class="container" data-controller="aliment" data-aliments-url-value="<%= params[:query] %>">
 
   <div class="title" id="title-product">
     <h2>Les repas qui match avec ta bière</h2>
   </div>
 
-  <div class="container-product">
-
-  <% params[:query].split(', ').each do |param| %>
-    <% param %>
+  <%= simple_form_for :aliment, url: recipes_path, method: :get do |f| %>
+    <%= f.collection_check_boxes :aliments, @aliments, :first, :last,
+      include_hidden: false,
+      class: "tag-selector",
+      item_wrapper_class: 'tag-item' %>
+    <%= hidden_field_tag :query, params[:query] %>
+    <%= f.submit %>
   <% end %>
+
+
+
+  <div class="container-product">
 
   <% @recipes.each do |recipe| %>
 
