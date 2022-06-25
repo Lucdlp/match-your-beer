@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "Detroying all Favorite, Beer, Recipe, Shop"
-Review.destroy.all
 Favorite.destroy_all
 Beer.destroy_all
 Recipe.destroy_all
@@ -23,7 +22,7 @@ beer = Beer.create!(brewery: 'Peak Beer', name: 'Peak Blonde', color: 'Blonde', 
 
 beer = Beer.create!(brewery: 'Abbaye de Leffe', name: 'Leffe Brune', color: 'Brune', style: 'Brown Ale', alcohol_level: '6,50', ibu_level: '20', country: 'Belgique', tag_list: 'charcuterie, barbecue, viande, volaille, porc, gibier, poisson, pizza, fromage persillé, chocolat, tiramisu, caramel, passion, porc, plat mijoté')
 
-beer = Beer.create!(brewery: 'Brasserie Lindemans', name: 'Kriek', color: 'Fruitée', style: 'Lambic', alcohol_level: '3,50', ibu_level: '18', country: 'Belgique', tag_list : 'crudité, légume, fast-food, fruit, fromage frais, fromage à pâte molle, poisson, gibier, plat mijoté')
+beer = Beer.create!(brewery: 'Brasserie Lindemans', name: 'Kriek', color: 'Fruitée', style: 'Lambic', alcohol_level: '3,50', ibu_level: '18', country: 'Belgique', tag_list: 'crudité, légume, fast-food, fruit, fromage frais, fromage à pâte molle, poisson, gibier, plat mijoté')
 
 beer = Beer.create!(brewery: 'NovaBirra', name: 'Big Mama', color: 'Noire', style: 'Belgian Cacao Stout', alcohol_level: '8,00', ibu_level: '42', country: 'Belgique', tag_list: 'gibier, agneau, volaille, fruit de mer, fromage persillé, noix de coco, amande grillée, fruit rouge, spéculoos, plat mijoté, tiramisu')
 
