@@ -1,19 +1,19 @@
-<div class="container" data-controller="aliment" data-aliments-url-value="<%= params[:query] %>">
+<div class="container">
 
   <div class="title" id="title-product">
     <h2>Les repas qui match avec ta bière</h2>
   </div>
 
-  <%= simple_form_for :aliment, url: recipes_path, method: :get do |f| %>
-    <%= f.collection_check_boxes :aliments, @aliments, :first, :last,
-      include_hidden: false,
-      class: "tag-selector",
-      item_wrapper_class: 'tag-item' %>
-    <%= hidden_field_tag :query, params[:query] %>
-    <%= f.submit %>
+  <div class="tags">
+  <% if params[:query] %>
+    <% params[:query].split(', ').each do |param| %>
+        <% @selected_ingredients = [params[:selected]].flatten %>
+        <% active = @selected_ingredients.include?(param) ? "active" : "" %>
+        <% @selected_ingredients.include?(param) ? @selected_ingredients.delete(param) : @selected_ingredients.push(param) %>
+        <%= link_to param, recipes_path(query: params[:query], selected: @selected_ingredients ), class: "tag-selector #{active}" %>
+    <% end %>
   <% end %>
-
-
+  </div>
 
   <div class="container-product">
 

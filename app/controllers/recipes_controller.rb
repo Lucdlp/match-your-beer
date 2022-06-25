@@ -2,9 +2,8 @@ class RecipesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @aliments = params[:query].split(', ').map { |aliment| [aliment, aliment] }
-    if params.key?(:aliment)
-      @recipes = Recipe.tagged_with(params[:aliment][:aliments], any: true)
+    if params[:selected] && params[:selected] != [""]
+      @recipes = Recipe.tagged_with(params[:selected].split(', '), any: true)
     elsif params[:query]
       @recipes = Recipe.tagged_with(params[:query].split(', '), any: true)
     else
