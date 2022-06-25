@@ -1,0 +1,38 @@
+.tags {
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+.tag-selector {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: #34363A;
+  border: 1.5px solid #FEC10D;
+  margin-right: 0.6rem;
+  margin-bottom: 0.4rem;
+
+}
+
+.tag-selector.active {
+  background-color: #FEC10D;
+  color: white;
+}
+
+.tag-selector, a {
+  text-decoration: none;
+  color:#34363A;
+}
+
+.tag-selector:hover {
+  background-color: #fec20d64;
+}
+
+.tag-selector, a:hover {
+  color:#34363A;
+}

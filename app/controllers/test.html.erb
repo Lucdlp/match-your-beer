@@ -1,0 +1,6 @@
+<%= simple_form_for :aliment, url: recipes_path, method: :get, html: {data: { aliments_target: "form" } } do |f| %>
+  <%= f.collection_check_boxes :aliments, @aliments, :first, :last, include_hidden: false, item_wrapper_class: 'tag-item' do |b|
+    b.check_box(class: "tag-selector", data: { action: "change->aliments#update" } ) + b.text end %>
+  <%= hidden_field_tag :query, params[:query] %>
+  <%= f.submit %>
+<% end %>
