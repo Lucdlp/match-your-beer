@@ -2,7 +2,9 @@ class BeersController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index, :show ]
 
   def index
-    if params[:query]
+    if params[:selected] && params[:selected] != [""]
+      @beers = Beer.tagged_with(params[:selected].split(', '), any: true)
+    elsif params[:query]
       @beers = Beer.tagged_with(params[:query].split(', '), any: true)
     else
       @beers = Beer.all
@@ -44,9 +46,9 @@ class BeersController < ApplicationController
         }
       end
     end
-    
+
     @favorite = Favorite.new
     @favorite.beer = @beer
-    
+
   end
 end

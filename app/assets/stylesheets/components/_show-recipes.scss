@@ -1,0 +1,30 @@
+.row-recipe {
+  background-color: #E0E2D7;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+.column-recipe {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.column-recipe img {
+  height: 500px;
+  width: 360px;
+  border-radius: 16px;
+}
+
+.row-recipe:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fav-btn {
+  position: absolute;
+  bottom: 55px;;
+  right: 33%;;
+}

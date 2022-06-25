@@ -4,11 +4,18 @@
     <h2>Les repas qui match avec ta bière</h2>
   </div>
 
-  <div class="container-product">
-
-  <% params[:query].split(', ').each do |param| %>
-    <% param %>
+  <div class="tags">
+  <% if params[:query] %>
+    <% params[:query].split(', ').each do |param| %>
+        <% @selected_ingredients = [params[:selected]].flatten %>
+        <% active = @selected_ingredients.include?(param) ? "active" : "" %>
+        <% @selected_ingredients.include?(param) ? @selected_ingredients.delete(param) : @selected_ingredients.push(param) %>
+        <%= link_to param, recipes_path(query: params[:query], selected: @selected_ingredients ), class: "tag-selector #{active}" %>
+    <% end %>
   <% end %>
+  </div>
+
+  <div class="container-product">
 
   <% @recipes.each do |recipe| %>
 
