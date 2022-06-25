@@ -33,3 +33,35 @@
   box-shadow: 0 10px 20px 4px rgba(35, 35, 35, .1);
   border-radius: 20px;
 }
+
+// Recipe Show
+
+.row {
+  background-color: #E0E2D7;
+  border-radius: 16px;
+  padding: 20px;
+}
+.column-recipe {
+  float: left;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.column-recipe img {
+  height: 500px;
+  width: 360px;
+  border-radius: 16px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fav-btn {
+  position: absolute;
+  bottom: 35px;;
+  left: 35px;;
+}
