@@ -1,19 +1,65 @@
+.row-myfav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.column-myfav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 15px;
+  width: 630px;
+  background-color: #dfe2d73e;
+  border-radius: 20px;
+  height: fit-content;
+  padding-bottom: 45px;
+}
+
 .container-favorite {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  align-items: start;
+  align-content: stretch;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.myfav-title {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 60px 0 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.myfav-icon-beers {
+  width: 80px;
+  position: absolute;
+  left: 470px;
+  top: 225px;
+  margin-top: 20px;
+}
+
+.myfav-icon-recipes {
+  width: 80px;
+  position: absolute;
+  left: 1130px;
+  top: 225px;
+  margin-top: 20px;
 }
 
 #title-favorite {
   padding: 20px 0 40px;
 }
 
-.wrapper {
+.wrapper-fav {
   justify-content: center;
-  width: 280px;
-  height: 320px;
+  width: 250px;
+  height: 300px;
   background: #DFE2D7;
   margin: auto;
   position: relative;
@@ -44,11 +90,12 @@
         width: 100%;
         background: #DFE2D7;
         position:relative;
-        padding-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         float: center;
           h1 {
-            font-size: 20px;
-            text-align: center;
+            font-size: 18px;
           }
         }
       }
@@ -74,17 +121,18 @@
     width: 140px;
     height: 140px;
     position: absolute;
-    top: -70px;
-    right: -70px;
+    top: -75px;
+    right: -75px;
     border-radius: 0px 0px 200px 200px;
     transition: all 0.5s, border-radius 2s, top 1s;
     overflow: hidden;
     .icon{
       position:absolute;
-      right:93px;
+      right:90px;
       top:85px;
       color: #34363A;
       opacity: 1;
+      font-size: 20px;
     }
     &:hover{
       width:100%;
@@ -104,13 +152,13 @@
       }
     }
     .contents{
-      padding: 5%;
+      padding: 2%;
       opacity: 0;
       transform: scale(0.5);
       transform: translateY(-200%);
       transition: opacity 0.2s, transform 0.8s;
       .row {
-        padding-top: 10px;
+        padding-top: 7px;
       }
     }
   }
@@ -123,7 +171,6 @@
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
-    column-count: 0;
   }
 
   .favorite-text {

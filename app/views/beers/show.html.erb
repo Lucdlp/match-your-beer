@@ -1,69 +1,95 @@
 <div class="container">
   <div class="row-beer">
-  <div class="column-info">
-    <div class="columns-beer">
-      <img src="https://res.cloudinary.com/dwzspwy7e/image/upload/v1655229221/delta_ipa_frxevj.webp" alt="">
+    <img src="https://res.cloudinary.com/dwzspwy7e/image/upload/v1655229221/delta_ipa_frxevj.webp" alt="">
+    <div class="column-beer">
+      <div class="head">
+        <div class="show-name"><%= @beer.name %></div>
+        <div class="show-button-fav">
+          <%= simple_form_for [ @beer, @favorite ] do |f| %>
+            <%= f.hidden_field :beer_id, value: @beer.id %>
+            <%= button_tag type: 'submit', class: "button-favorite", as: :boolean, input_html: { class: "toggle" } do %>
+              <i class="far fa-heart" aria-hidden="true"></i>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="show-rating">
+        <a href="#commentaires" id="ancre"><div class="show-text"><i class="fas fa-star"></i> <strong><%=@beer.average_rating_beer%></strong> / 5</div></a>
+      </div>
+
+      <div class="row">
+        <div class="column-3 col col-6">
+          <div class="show-title">Brasserie</div>
+          <div class="show-text"><%= @beer.brewery %></div>
+          <div class="show-title">Type</div>
+          <div class="show-text"><%= @beer.color %></div>
+          <div class="show-title">Style</div>
+          <div class="show-text"><%= @beer.style %></div>
+        </div>
+        <div class="col col-6">
+          <div class="show-title">Origine</div>
+          <div class="show-text"><%= @beer.country %></div>
+          <div class="show-title">Alcool</div>
+          <div class="show-text"><%= @beer.alcohol_level %> %</div>
+          <div class="show-title">IBU</div>
+          <div class="show-text"><%= @beer.ibu_level %></div>
+        </div>
+      </div>
+
+    <div class="show-description">
+      <div class="show-title">Description</div>
+        <%# Mettre la balise @beer.description %>
+        <p>
+        Bière double d'altitude, la Peak Brune est la bière du brasseur par excellence.
+        Pas d'épice, pas de chichi mais un mélange savant de cinq malts sélectionnés
+        pour ouvrir vos papilles vers un équilibre entre douceur et notes torréfiées, biscuitées et caramel.
+        Elle peut révéler ses talents lorsqu'elle est accompagnée d'un fromage affiné.
+        </p>
+      </div>
+
+<hr>
+
+    <div class="show-shops">
+      <b><i class="fas fa-map-marker-alt"></i> Où trouver cette bière ?</b>
+        <% @shops.each do |shop| %>
+        <li>— <%= shop.name %></li>
+        <% end %>
     </div>
-    <div class="columns-beer">
-      <h1><%= @beer.name %></h2>
-      <p><i class="fas fa-star"></i> <strong><%=@beer.average_rating_beer%></strong> / 5</p>
-      <h4>Brasserie — <%= @beer.brewery %></h4>
-      <h4>Taux d'alcool — <%= @beer.alcohol_level %></h4>
-      <h4>IBU / amertume — <%= @beer.ibu_level %></h4>
-       <%# Mettre la balise @beer.description %>
-      <p>Bière double d'altitude, la Peak Brune est la bière du brasseur par excellence.
-        Pas d'épice, pas de chichi mais un mélange savant de cinq malts sélectionnés pour ouvrir vos papilles vers un équilibre entre douceur et notes torréfiées, biscuitées et caramel. Elle peut révéler ses talents lorsqu'elle est accompagnée d'un fromage affiné.</p>
+
     </div>
-    <div>
-      <%= simple_form_for [ @beer, @favorite ] do |f| %>
-        <%= f.hidden_field :beer_id, value: @beer.id %>
-        <%= f.button :submit, "Ajouter aux favoris", class: "btn btn-primary", "data-disable-with" => "Envoie en cours.." %>
-      <% end %>
-    </div>
-  </div>
+
     <div class="column-map">
       <div style="width: 100%; height: 600px;"
-      data-controller="mapbox"
-      data-mapbox-markers-value="<%= @markers.to_json %>"
-      data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+        data-controller="mapbox"
+        data-mapbox-markers-value="<%= @markers.to_json %>"
+        data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+      </div>
+    </div>
+  </div>
+
+  <div class="row-rating">
+    <div class="column-rating">
+      <% if current_user.present? %>
+      <div id="commentaires">Laisser un avis sur cette bière !</div>
+        <%= simple_form_for [ @beer, @review ] do |f| %>
+        <%= f.input :rating, class: "form-comment", label: "Note", as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
+        <%= f.input :comment, class: "form-comment", label: "Commentaire", :input_html => { :maxlength => 50 } %>
+        <%= f.submit "Envoyer", class: "button-favorite" %>
+        <% end %>
+      <% else %>
+        <div class="text-unlog">Vous devez vous  <a href="<%= new_user_session_path%>" id="unlog_link">connecter</a>  ou vous  <a href="<%= new_user_registration_path %>" id="unlog_link">inscrire</a>  sur Match Your Beer pour laisser un avis.</div>
+      <% end %>
+    </div>
+    <div class="show-comment">
+      <div id="commentaires">Les avis</div>
+      <div class="rating-comment">
+        <% @beer.reviews.each do |review| %>
+          <div class="rating-text"><i class="fas fa-star"></i> <strong><%=review.rating%></strong> / 5 – <%= review.comment.capitalize %></div>
+        <% end %>
+      </div>
     </div>
 
   </div>
-    <div class="column-review">
-
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  <div>
-    <p>Où trouver cette bière ?</p>
-    <% @shops.each do |shop| %>
-    <%= shop.name %>
-    <% end %>
-  </div>
-
-
-
-
-  <div>
-    <p>Ajoute un avis sur cette bière</p>
-    <% if current_user.present? %>
-      <%= simple_form_for [ @beer, @review ] do |f| %>
-        <%= f.input :rating, label: "Note", as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
-        <%= f.input :comment, label: "Commentaire" %>
-        <%= f.submit "Envoyer", class: "btn btn-primary" %>
-      <% end %>
-    <% end %>
-  </div>
-
-</div>
+  <a href="#" id="haut"><i class="fas fa-arrow-up"></i> haut de page</a>
+ </div>

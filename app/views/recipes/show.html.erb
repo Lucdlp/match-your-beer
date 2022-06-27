@@ -1,75 +1,100 @@
 <div class="container">
   <div class="row-recipe">
+    <img src="https://i.pinimg.com/736x/06/dc/96/06dc9657210de528e6fb34d7b1d37ee3.jpg" alt="">
     <div class="column-recipe">
-      <img src="https://i.pinimg.com/736x/06/dc/96/06dc9657210de528e6fb34d7b1d37ee3.jpg" alt="">
-    </div>
-    <div class="column-recipe" style="padding: 15px 35px; text-align: left; column-fill: auto; height: 400px; overflow-y: auto; " >
-      <div class="predes">
-        <h1><%= @recipe.name %></h1>
-        <p><i class="fas fa-star"></i> <strong><%=@recipe.average_rating_recipe%></strong> / 5</p>
-        <h4><%= @recipe.prep_time %> minutes</h4>
-        <h4><%= @recipe.difficulty_level %></h4>
+      <div class="head">
+        <div class="show-name"><%= @recipe.name %></div>
+        <div class="show-button-fav">
+          <%= simple_form_for [ @recipe, @favorite ] do |f| %>
+            <%= f.hidden_field :recipe_id, value: @recipe.id %>
+            <%= button_tag type: 'submit', class: "button-favorite", as: :boolean, input_html: { class: "toggle" } do %>
+              <i class="far fa-heart" aria-hidden="true"></i>
+            <% end %>
+          <% end %>
+        </div>
       </div>
-      <p>ÉTAPE 1
-          Séparer les blancs des jaunes d'oeufs.
 
-          ÉTAPE 2
-          Mélanger les jaunes avec le sucre roux et le sucre vanillé.
+      <div class="show-rating">
+        <a href="#commentaires" id="ancre"><div class="show-text"><i class="fas fa-star"></i> <strong><%=@recipe.average_rating_recipe%></strong> / 5</div></a>
+      </div>
 
-          ÉTAPE 3
-          Ajouter le mascarpone au fouet.
+      <div class="show-title">Temps de préparation</div>
+      <div class="show-text"><%= @recipe.prep_time %> min</div>
+      <div class="show-title">Niveau de difficulté</div>
+      <div class="show-text"><%= @recipe.difficulty_level %></div>
 
-          ÉTAPE 4
-          Monter les blancs en neige et les incorporer délicatement à la spatule au mélange précédent. Réserver. ÉTAPE 5
-          Mouiller les biscuits dans le café rapidement avant d'en tapisser le fond du plat.
-
-          ÉTAPE 6
-          Recouvrir d'une couche de crème au mascarpone puis répéter l'opération en alternant couche de biscuits et couche de crème en terminant par cette dernière.
-
-          ÉTAPE 7
-          Saupoudrer de cacao.
-
-          ÉTAPE 8
-          Mettre au réfrigérateur 4 heures minimum puis déguster frais.
-
-          ÉTAPE 4
-          Monter les blancs en neige et les incorporer délicatement à la spatule au mélange précédent. Réserver. ÉTAPE 5
-          Mouiller les biscuits dans le café rapidement avant d'en tapisser le fond du plat.
-
-          ÉTAPE 6
-          Recouvrir d'une couche de crème au mascarpone puis répéter l'opération en alternant couche de biscuits et couche de crème en terminant par cette dernière.
-
-          ÉTAPE 7
-          Saupoudrer de cacao.
-
-          ÉTAPE 8
-          Mettre au réfrigérateur 4 heures minimum puis déguster frais.
-        </p>
+    <div class="show-ingredients">
+      <b>Ingrédients pour 4 personnes</b><br>
+      <p>- 4 truites <br>
+      - 1 citron jaune (non traité) <br>
+      - 1 douzaine de gousses d'ail en chemise <br>
+      - 1 bouquet de thym <br>
+      - 4 feuilles de laurier <br>
+      - 4 pincées d'herbes de Provence <br>
+      - 8 c.à.s d'huile d'olive <br>
+      - sel & poivre</p>
     </div>
-    <div class="fav-btn">
-      <%= simple_form_for [ @recipe, @favorite ] do |f| %>
-      <%= f.hidden_field :recipe_id, value: @recipe.id %>
-      <%= f.button :submit, "Ajouter aux favoris", class: "btn btn-secondary", "data-disable-with" => "Envoie en cours.." %>
-      <% end %>
+    <div class="show-description">
+      <p><b>Etape 1</b><br>
+      Séparer les blancs des jaunes d'oeufs. <br>
+      <br>
+      <b>Etape 2</b><br>
+      Mélanger les jaunes avec le sucre roux et le sucre vanillé. <br>
+      <br>
+      <b>Etape 3</b><br>
+      Ajouter le mascarpone au fouet. <br>
+      <br>
+      <b>Etape 4</b><br>
+      Monter les blancs en neige et les incorporer délicatement à la spatule au mélange précédent. Réserver. <br>
+      <br>
+      <b>Etape 4</b><br>
+      Mouiller les biscuits dans le café rapidement avant d'en tapisser le fond du plat. <br>
+      <br>
+      <b>Etape 5</b><br>
+      Recouvrir d'une couche de crème au mascarpone puis répéter l'opération en alternant couche de biscuits et couche de crème en terminant par cette dernière. <br>
+      <br>
+      <b>Etape 6</b><br>
+      Saupoudrer de cacao. <br>
+      <br>
+      <b>Etape 7</b><br>
+      Mettre au réfrigérateur 4 heures minimum puis déguster frais. <br>
+      <br>
+      <b>Etape 8</b><br>
+      Monter les blancs en neige et les incorporer délicatement à la spatule au mélange précédent. Réserver. ÉTAPE 5
+      Mouiller les biscuits dans le café rapidement avant d'en tapisser le fond du plat. <br>
+      <br>
+      <b>Etape 9</b><br>
+      Recouvrir d'une couche de crème au mascarpone puis répéter l'opération en alternant couche de biscuits et couche de crème en terminant par cette dernière. <br>
+      <br>
+      <b>Etape 10</b><br>
+      Saupoudrer de cacao.
+      </p>
+    </div>
     </div>
   </div>
-  <div class="row-recipe justify-content-center" style="margin-top : 20px;">
-    <div class="col-6 col-sm-4">
+
+  <div class="row-rating">
+    <div class="column-rating">
       <% if current_user.present? %>
-        <h4><strong>Laisser un avis</strong></h4>
-      <%= simple_form_for [ @recipe, @review ] do |f| %>
-      <%= f.input :rating, label: "Note",as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
-      <%= f.input :comment, label: "Commentaire" %>
-      <%= f.submit "Envoyer", class: "btn btn-primary" %>
-      <% end %>
+      <div id="commentaires">Laisser un avis sur cette recette !</div>
+        <%= simple_form_for [ @recipe, @review ] do |f| %>
+        <%= f.input :rating, class: "form-comment", label: "Note", as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
+        <%= f.input :comment, class: "form-comment", label: "Commentaire", :input_html => { :maxlength => 50 } %>
+        <%= f.submit "Envoyer", class: "button-favorite" %>
+        <% end %>
       <% else %>
-        <h3 style="text-align : left; padding-top: 12%;">Vous devez vous <a href="<%= new_user_session_path%>" style="text-decoration: none; color: #FFC20E;"><strong>connecter</strong></a> ou vous <a href="<%= new_user_path %>" style="text-decoration: none; color: #FFC20E;"><strong>inscrire</strong></a> sur Match Your Beer pour laisser un avis.</h3>
+        <div class="text-unlog">Vous devez vous  <a href="<%= new_user_session_path%>" id="unlog_link">connecter</a>  ou vous  <a href="<%= new_user_registration_path %>" id="unlog_link">inscrire</a>  sur Match Your Beer pour laisser un avis.</div>
       <% end %>
     </div>
-    <div class="col-8 col-sm-4" style="padding-left : 20px; height: 140px; overflow-y: scroll; align-self: center;">
-      <% @recipe.reviews.each do |review| %>
-        <p><i class="fas fa-star"></i> <strong><%=review.rating%></strong> / 5 - <%= review.comment %></p>
-      <% end %>
+    <div class="show-comment">
+      <div id="commentaires">Les avis</div>
+      <div class="rating-comment">
+        <% @recipe.reviews.each do |review| %>
+          <div class="rating-text"><i class="fas fa-star"></i> <strong><%=review.rating%></strong> / 5 – <%= review.comment.capitalize %></div>
+        <% end %>
+      </div>
     </div>
+
   </div>
-</div>
+  <a href="#" id="haut"><i class="fas fa-arrow-up"></i> haut de page</a>
+ </div>

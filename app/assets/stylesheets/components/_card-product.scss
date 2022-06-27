@@ -29,14 +29,14 @@
     width:100%;
     height:100%;
     .top{
-      height: 70%;
+      height: 73%;
       width: 100%;
       background: url(https://res.cloudinary.com/dwzspwy7e/image/upload/v1655229242/hoegaarden_sgoiv5.webp) no-repeat bottom;
       background-size: 100%;
     }
     .bottom{
       width: 100%;
-      height: 30%;
+      height: 27%;
       .details {
         display: flex;
         align-items: center;
@@ -46,6 +46,7 @@
         background: #DFE2D7;
         position:relative;
         float: center;
+        padding: 12px;
           h1 {
             font-size: 20px;
             text-align: center;
@@ -79,10 +80,10 @@
     border-radius: 0px 0px 200px 200px;
     transition: all 0.5s, border-radius 2s, top 1s;
     overflow: hidden;
-    .icon{
+    .icon-product{
       position:absolute;
-      right:93px;
-      top:85px;
+      right:95px;
+      top:92px;
       color: #34363A;
       opacity: 1;
     }
