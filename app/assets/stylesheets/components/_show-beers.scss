@@ -80,10 +80,20 @@
   }
 }
 
-button.button-favorite {
-  border:0;
-  background:none;
-  font-size: 16px;
+input.button-favorite {
+  border: 0!important;
+  text-decoration: none !important;
+  background: #FEC10D;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  margin-top: 5px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 40px;
 }
 
 .show-button-fav, .far {

@@ -38,7 +38,6 @@
       </div>
 
     <div class="show-description">
-      <div class="show-title">Description</div>
         <%# Mettre la balise @beer.description %>
         <p>
         Bière double d'altitude, la Peak Brune est la bière du brasseur par excellence.
@@ -73,7 +72,7 @@
       <% if current_user.present? %>
       <div id="commentaires">Laisser un avis sur cette bière !</div>
         <%= simple_form_for [ @beer, @review ] do |f| %>
-        <%= f.input :rating, class: "form-comment", label: "Note", as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
+        <%= f.input :rating, class: "form-comment", label: "Note / 5", as: :float, input_html: { min: '0', max: '5', step: 'any' } %>
         <%= f.input :comment, class: "form-comment", label: "Commentaire", :input_html => { :maxlength => 50 } %>
         <%= f.submit "Envoyer", class: "button-favorite" %>
         <% end %>
@@ -82,11 +81,13 @@
       <% end %>
     </div>
     <div class="show-comment">
+      <% if @beer.reviews.present? %>
       <div id="commentaires">Les avis</div>
       <div class="rating-comment">
         <% @beer.reviews.each do |review| %>
           <div class="rating-text"><i class="fas fa-star"></i> <strong><%=review.rating%></strong> / 5 – <%= review.comment.capitalize %></div>
         <% end %>
+      <% end %>
       </div>
     </div>
 
