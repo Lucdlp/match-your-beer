@@ -3,9 +3,9 @@
   background-color: #34363a;
   background-size: cover;
   background-position: 5ch;
-  height: 640px;
+  height: 590px;
   text-align: center;
-  padding-top: 30vh;
+  padding-top: 26vh;
 }
 
 .banner h1 {
@@ -50,11 +50,11 @@
   font-weight: 500;
 }
 
-.btn-banner:hover {
-  color:#34363a;
-  box-shadow:  10px 10px 30px #34363a4f,
-}
-
+.btn-banner:hover, button:active {
+  -webkit-transform: translate(0px,3px);
+  -ms-transform: translate(0px,3px);
+  transform: translate(0px,3px);
+ }
 
 // CARD-PRODUCT
 
@@ -141,6 +141,7 @@
   color: white;
   box-shadow: 5px 5px 30px #34363a3b,
 }
+
 //
 
 .container-product-recipe {
@@ -222,41 +223,11 @@
   border-radius: 40px;
 }
 
-/* responsive */
-@media (max-width: 1080px) {
-  .container {
-      height: auto;
-  }
-  .container .imgBx {
-      padding: 40px;
-      box-sizing: border-box;
-      width: 100% !important;
-      height: auto;
-      text-align: center;
-      overflow: hidden;
-  }
-  .container .imgBx img {
-      left: initial;
-      max-width: 100%;
-      transform: rotate(0deg);
-  }
-  .details {
-      width: 100% !important;
-      height: auto;
-      padding: 20px;
-  }
-  .container .details p {
-      margin-left: 0;
-      max-width: 100%;
-  }
-}
-
-
 // CARD MATCH
 .container-match {
   width: 100%;
   max-width: 1140px;
-  margin-top: 80px;
+  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -440,7 +411,7 @@ abbr:hover::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  grid-row-gap: 14px;
+  grid-row-gap: 20px;
   width: 250px;
   border-radius: 20px;
 }
@@ -453,7 +424,7 @@ abbr:hover::after {
 
 .container-top img,
 .img-top {
-  height: 220px;
+  height: 200px;
 }
 
 .title-top {

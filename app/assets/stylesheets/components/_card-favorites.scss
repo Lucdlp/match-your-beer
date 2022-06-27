@@ -41,7 +41,7 @@
   position: absolute;
   left: 470px;
   top: 225px;
-  margin-top: 20px;
+
 }
 
 .myfav-icon-recipes {
@@ -49,7 +49,7 @@
   position: absolute;
   left: 1130px;
   top: 225px;
-  margin-top: 20px;
+
 }
 
 #title-favorite {
@@ -115,7 +115,7 @@
     text-decoration: none;
   }
 
-  .inside{
+  .inside-fav {
     z-index:9;
     background: #FEC10D;
     width: 140px;
