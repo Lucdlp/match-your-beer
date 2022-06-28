@@ -51,4 +51,5 @@ class BeersController < ApplicationController
     @favorite.beer = @beer
 
   end
+
 end
