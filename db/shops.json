@@ -1,0 +1,1459 @@
+[
+  {
+    "name": "Bootlegger",
+    "address": "82 Rue de l'Ouest, 75014 Paris",
+    "zone": 75014,
+    "latitude": "48.835080",
+    "longitude": "2.317038",
+    "ouverture": "1982-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Cave à bière",
+    "address": "202 Rue de Paris, 95150 Taverny",
+    "zone": 95000,
+    "latitude": "49.024984",
+    "longitude": "2.228275",
+    "ouverture": "1990-06-29T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bières et Malts",
+    "address": "13 Boulevard de la Liberté, 94170 Le Perreux-sur-Marne",
+    "zone": 94000,
+    "latitude": "48.836674",
+    "longitude": "2.496250",
+    "ouverture": "1998-06-29T22:00:00.000Z",
+    "fermeture": "2018-11-01T23:00:00.000Z"
+  }, {
+    "name": "Pommier",
+    "address": "Place d’Aligre, 75012 Paris",
+    "zone": 75012,
+    "latitude": "48.848997",
+    "longitude": "2.377779",
+    "ouverture": "1998-06-30T22:00:00.000Z",
+    "fermeture": "2017-06-29T22:00:00.000Z"
+  }, {
+    "name": "Cave à bulles",
+    "address": "45 Rue Quincampoix, 75004 Paris",
+    "zone": 75004,
+    "latitude": "48.861062",
+    "longitude": "2.350451",
+    "ouverture": "2006-06-30T22:00:00.000Z",
+    "fermeture": "2020-01-17T23:00:00.000Z"
+  }, {
+    "name": "Bières cultes - Damrémont",
+    "address": "40 Rue Damrémont, 75018 Paris",
+    "zone": 75018,
+    "latitude": "48.889527",
+    "longitude": "2.333894",
+    "ouverture": "2007-06-30T22:00:00.000Z",
+    "fermeture": "2019-06-29T22:00:00.000Z"
+  }, {
+    "name": "Terre de bières",
+    "address": "85 bis Boulevard de Magenta, 75010 Paris",
+    "zone": 75010,
+    "latitude": "48.876394",
+    "longitude": "2.355653",
+    "ouverture": "2008-06-30T22:00:00.000Z",
+    "fermeture": "2012-06-29T22:00:00.000Z"
+  }, {
+    "name": "Bières cultes - Legendre",
+    "address": "25 Rue Legendre, 75017 Paris",
+    "zone": 75017,
+    "latitude": "48.884199",
+    "longitude": "2.314062",
+    "ouverture": "2009-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Brewberry",
+    "address": "18 Rue du Pot-de-Fer, 75005 Paris",
+    "zone": 75005,
+    "latitude": "48.842970",
+    "longitude": "2.348552",
+    "ouverture": "2010-06-30T22:00:00.000Z",
+    "fermeture": "2019-06-29T22:00:00.000Z"
+  }, {
+    "name": "Chop'in",
+    "address": "45 Rue de Gergovie, 75014 Paris",
+    "zone": 75014,
+    "latitude": "48.833100",
+    "longitude": "2.316386",
+    "ouverture": "2010-06-30T22:00:00.000Z",
+    "fermeture": "2020-01-24T23:00:00.000Z"
+  }, {
+    "name": "Hop malt market",
+    "address": "79 Rue Saint-Maur, 75011 Paris",
+    "zone": 75011,
+    "latitude": "48.863689",
+    "longitude": "2.378647",
+    "ouverture": "2010-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bières cultes - Châtelet",
+    "address": "14 Rue des Halles, 75001 Paris",
+    "zone": 75001,
+    "latitude": "48.859894",
+    "longitude": "2.346848",
+    "ouverture": "2011-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Cervoise 91",
+    "address": "62 Rue de Gravigny, 91380 Chilly-Mazarin",
+    "zone": 91000,
+    "latitude": "48.694722",
+    "longitude": "2.308748",
+    "ouverture": "2011-10-12T22:00:00.000Z",
+    "fermeture": "2015-02-04T23:00:00.000Z"
+  }, {
+    "name": "Bière & Malt",
+    "address": "4 Rue Poissonnière, 75002 Paris",
+    "zone": 75002,
+    "latitude": "48.868686",
+    "longitude": "2.347839",
+    "ouverture": "2012-06-30T22:00:00.000Z",
+    "fermeture": "2018-06-29T22:00:00.000Z"
+  }, {
+    "name": "Paris saint bière",
+    "address": "101 Rue de Charonne, 75011 Paris",
+    "zone": 75011,
+    "latitude": "48.854571",
+    "longitude": "2.384318",
+    "ouverture": "2012-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Moustache blanche",
+    "address": "16 Rue des Tournelles, 75004 Paris",
+    "zone": 75004,
+    "latitude": "48.854549",
+    "longitude": "2.367387",
+    "ouverture": "2012-11-20T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bières cultes - Cardinal",
+    "address": "44 Rue des Boulangers, 75005 Paris",
+    "zone": 75005,
+    "latitude": "48.846497",
+    "longitude": "2.352070",
+    "ouverture": "2013-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bièrissime",
+    "address": "85 bis Boulevard de Magenta, 75010 Paris",
+    "zone": 75010,
+    "latitude": "48.876394",
+    "longitude": "2.355653",
+    "ouverture": "2013-06-30T22:00:00.000Z",
+    "fermeture": "2016-06-29T22:00:00.000Z"
+  }, {
+    "name": "People drugstore",
+    "address": "78 Rue des Martyrs, 75018 Paris",
+    "zone": 75018,
+    "latitude": "48.882953",
+    "longitude": "2.339856",
+    "ouverture": "2013-06-30T22:00:00.000Z",
+    "fermeture": "2016-06-29T22:00:00.000Z"
+  }, {
+    "name": "À la bière comme à la bière - Custine",
+    "address": "20 Rue Custine, 75018 Paris",
+    "zone": 75018,
+    "latitude": "48.888661",
+    "longitude": "2.347654",
+    "ouverture": "2013-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Beer Town",
+    "address": "15 Rue du Val, 77160 Provins",
+    "zone": 77000,
+    "latitude": "48.560399",
+    "longitude": "3.297769",
+    "ouverture": "2013-07-05T22:00:00.000Z",
+    "fermeture": "2019-03-21T23:00:00.000Z"
+  }, {
+    "name": "Biérocratie",
+    "address": "32 Rue de l'Espérance, 75013 Paris",
+    "zone": 75013,
+    "latitude": "48.825476",
+    "longitude": "2.346943",
+    "ouverture": "2013-07-19T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Arômes Bières",
+    "address": "132 Rue des Bourguignons, 92600 Asnières-sur-Seine",
+    "zone": 78000,
+    "latitude": "48.912144",
+    "longitude": "2.272258",
+    "ouverture": "2014-06-25T22:00:00.000Z",
+    "fermeture": "2018-11-20T23:00:00.000Z"
+  }, {
+    "name": "Bieregrad",
+    "address": "18-20 Rue de la Butte aux Cailles, 75013 Paris",
+    "zone": 75013,
+    "latitude": "48.827939",
+    "longitude": "2.350770",
+    "ouverture": "2014-06-30T22:00:00.000Z",
+    "fermeture": "2018-06-29T22:00:00.000Z"
+  }, {
+    "name": "El Tast",
+    "address": "70 Rue Duhesme, 75018 Paris",
+    "zone": 75018,
+    "latitude": "48.893685",
+    "longitude": "2.343358",
+    "ouverture": "2014-06-30T22:00:00.000Z",
+    "fermeture": "2019-12-30T23:00:00.000Z"
+  }, {
+    "name": "À la bière comme à la bière - Jourdain",
+    "address": "353 Rue des Pyrenées, 75020 Paris",
+    "zone": 75020,
+    "latitude": "48.872292",
+    "longitude": "2.391181",
+    "ouverture": "2014-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Caisse de Bières - Courbevoie",
+    "address": "21 Rue Kléber, 92400 Courbevoie",
+    "zone": 92000,
+    "latitude": "48.895147",
+    "longitude": "2.246865",
+    "ouverture": "2014-07-16T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Société parisienne de bière",
+    "address": "5 Rue des Moines, 75017 Paris",
+    "zone": 75017,
+    "latitude": "48.887590",
+    "longitude": "2.318033",
+    "ouverture": "2014-11-14T23:00:00.000Z",
+    "fermeture": "2019-07-09T22:00:00.000Z"
+  }, {
+    "name": "Beerotek",
+    "address": "17 Rue de Satory, 78000 Versailles",
+    "zone": 78000,
+    "latitude": "48.800344",
+    "longitude": "2.124973",
+    "ouverture": "2015-03-12T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bock en Stock",
+    "address": "9 Rue Philippe de Dangeau, 78000 Versailles",
+    "zone": 78000,
+    "latitude": "48.803515",
+    "longitude": "2.133791",
+    "ouverture": "2015-03-31T22:00:00.000Z",
+    "fermeture": "2017-12-11T23:00:00.000Z"
+  }, {
+    "name": "B&W &Co",
+    "address": "8 Rue de Paron, 91370 Verrières-le-Buisson",
+    "zone": 91000,
+    "latitude": "48.746573",
+    "longitude": "2.268260",
+    "ouverture": "2015-04-02T22:00:00.000Z",
+    "fermeture": "2016-12-30T23:00:00.000Z"
+  }, {
+    "name": "Instant B",
+    "address": "17 Rue du Maréchal Foch, 78110 Le Vésinet",
+    "zone": 78000,
+    "latitude": "48.892909",
+    "longitude": "2.134766",
+    "ouverture": "2015-04-24T22:00:00.000Z",
+    "fermeture": "2019-07-12T22:00:00.000Z"
+  }, {
+    "name": "So Bière",
+    "address": "3 Place André Malraux, 78100 Saint-Germain-en-Laye",
+    "zone": 78000,
+    "latitude": "48.896992",
+    "longitude": "2.095750",
+    "ouverture": "2015-06-29T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Ah! La pompe à bière",
+    "address": "7 ter Rue Duvergier, 75019 Paris",
+    "zone": 75019,
+    "latitude": "48.889210",
+    "longitude": "2.376789",
+    "ouverture": "2015-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Beer shop",
+    "address": "32 Rue Basfroi, 75011 Paris",
+    "zone": 75011,
+    "latitude": "48.855471",
+    "longitude": "2.379154",
+    "ouverture": "2015-06-30T22:00:00.000Z",
+    "fermeture": "2017-06-29T22:00:00.000Z"
+  }, {
+    "name": "Bière bodoma",
+    "address": "15 Rue de l'Asile Popincourt, 75011 Paris",
+    "zone": 75011,
+    "latitude": "48.860111",
+    "longitude": "2.375318",
+    "ouverture": "2015-07-01T22:00:00.000Z",
+    "fermeture": "2019-06-30T22:00:00.000Z"
+  }, {
+    "name": "Bièrestube",
+    "address": "136 Rue de Vaugirard, 75015 Paris",
+    "zone": 75015,
+    "latitude": "48.844888",
+    "longitude": "2.318842",
+    "ouverture": "2015-06-30T22:00:00.000Z",
+    "fermeture": "2016-06-29T22:00:00.000Z"
+  }, {
+    "name": "Superbières",
+    "address": "203 Rue du Faubourg Saint-Martin, 75010 Paris",
+    "zone": 75010,
+    "latitude": "48.880089",
+    "longitude": "2.363639",
+    "ouverture": "2015-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Binouze Rochechouart",
+    "address": "72 Rue Marguerite de Rochechouart, 75009 Paris",
+    "zone": 75009,
+    "latitude": "48.881634",
+    "longitude": "2.346691",
+    "ouverture": "2015-10-31T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Beers & Records",
+    "address": "7 Rue de Vincennes, 93100 Montreuil",
+    "zone": 93000,
+    "latitude": "48.857532",
+    "longitude": "2.437540",
+    "ouverture": "2015-11-14T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "V and B - Maurepas",
+    "address": "Rue Jean Perrin, 78310 Maurepas",
+    "zone": 78000,
+    "latitude": "48.759344",
+    "longitude": "1.916040",
+    "ouverture": "2015-11-14T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Brun Houblon",
+    "address": "116 Avenue Gabriel Péri, 91700 Sainte-Geneviève-des-Bois",
+    "zone": 91000,
+    "latitude": "48.647776",
+    "longitude": "2.325137",
+    "ouverture": "2015-12-03T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Incognito",
+    "address": "71 Rue de Charonne, 75011 Paris",
+    "zone": 75011,
+    "latitude": "48.853726",
+    "longitude": "2.380553",
+    "ouverture": "2016-02-03T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Orge & Houblon - Clamart",
+    "address": "30 Rue Paul Vaillant Couturier, 92140 Clamart",
+    "zone": 92000,
+    "latitude": "48.801644",
+    "longitude": "2.266253",
+    "ouverture": "2016-02-29T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "P'tite mousse",
+    "address": "29 Rue de Douai, 75009 Paris",
+    "zone": 75009,
+    "latitude": "48.882467",
+    "longitude": "2.332716",
+    "ouverture": "2016-03-25T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "107 bis",
+    "address": "107 bis Avenue de Saint-Ouen, 75017 Paris",
+    "zone": 75017,
+    "latitude": "48.894567",
+    "longitude": "2.327784",
+    "ouverture": "2016-05-10T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Chop Bières Team",
+    "address": "16 Rue Darnetal, 77100 Meaux",
+    "zone": 77000,
+    "latitude": "48.958733",
+    "longitude": "2.879544",
+    "ouverture": "2016-06-29T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Barbylone",
+    "address": "112 Rue Marcadet, 75018 Paris",
+    "zone": 75018,
+    "latitude": "48.891332",
+    "longitude": "2.341763",
+    "ouverture": "2016-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Gobibières",
+    "address": "3 Rue du Maine, 75014 Paris",
+    "zone": 75014,
+    "latitude": "48.840504",
+    "longitude": "2.323570",
+    "ouverture": "2016-06-30T22:00:00.000Z",
+    "fermeture": "2017-06-29T22:00:00.000Z"
+  }, {
+    "name": "Houblon ou Brune",
+    "address": "16 Rue de Cotte, 75012 Paris",
+    "zone": 75012,
+    "latitude": "48.849782",
+    "longitude": "2.377983",
+    "ouverture": "2016-06-30T22:00:00.000Z",
+    "fermeture": "2018-06-29T22:00:00.000Z"
+  }, {
+    "name": "Byerroise",
+    "address": "2 Rue Pierre de Coubertin, 91330 Yerres",
+    "zone": 91000,
+    "latitude": "48.712966",
+    "longitude": "2.480278",
+    "ouverture": "2016-10-31T23:00:00.000Z",
+    "fermeture": "2019-10-28T23:00:00.000Z"
+  }, {
+    "name": "Échoppe de Bières",
+    "address": "114 Rue du Général de Gaulle, 78300 Poissy",
+    "zone": 78000,
+    "latitude": "48.928031",
+    "longitude": "2.044770",
+    "ouverture": "2016-12-06T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "V and B - La Ville-du-Bois",
+    "address": "Allée St Fiacre, 91620 La Ville-du-Bois",
+    "zone": 91000,
+    "latitude": "48.650917",
+    "longitude": "2.270548",
+    "ouverture": "2017-01-14T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Frigo",
+    "address": "43 Rue de l'Ourcq, 75019 Paris",
+    "zone": 75019,
+    "latitude": "48.889631",
+    "longitude": "2.383281",
+    "ouverture": "2017-02-07T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bières à l'affût",
+    "address": "18 Avenue de la Résistance, 91700 Sainte-Geneviève-des-Bois",
+    "zone": 91000,
+    "latitude": "48.623714",
+    "longitude": "2.333053",
+    "ouverture": "2017-02-28T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Molière",
+    "address": "12 Rue de Buci, 75006 Paris",
+    "zone": 75006,
+    "latitude": "48.853900",
+    "longitude": "2.337241",
+    "ouverture": "2017-02-28T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Rockout Shop",
+    "address": "40 Rue de Paris, 78600 Maisons-Laffitte",
+    "zone": 78000,
+    "latitude": "48.946728",
+    "longitude": "2.149802",
+    "ouverture": "2017-05-31T22:00:00.000Z",
+    "fermeture": "2020-02-01T23:00:00.000Z"
+  }, {
+    "name": "Beers & Records épicerie",
+    "address": "17 Rue de l'Église, 93100 Montreuil",
+    "zone": 93000,
+    "latitude": "48.863892",
+    "longitude": "2.442868",
+    "ouverture": "2017-06-20T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Binouze Paradis",
+    "address": "11 Rue de Paradis, 75010 Paris",
+    "zone": 75010,
+    "latitude": "48.874569",
+    "longitude": "2.353960",
+    "ouverture": "2017-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bièrothèque belge",
+    "address": "40 Rue Hermel, 75018 Paris",
+    "zone": 75018,
+    "latitude": "48.893155",
+    "longitude": "2.345578",
+    "ouverture": "2017-06-30T22:00:00.000Z",
+    "fermeture": "2019-11-17T23:00:00.000Z"
+  }, {
+    "name": "Comptoir des fromages et de la bière",
+    "address": "Marché Beauvau, Place d’Aligre, 75012 Paris",
+    "zone": 75012,
+    "latitude": "48.848997",
+    "longitude": "2.377779",
+    "ouverture": "2017-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Liquiderie",
+    "address": "9 Rue des Trois Bornes, 75011 Paris",
+    "zone": 75011,
+    "latitude": "48.866467",
+    "longitude": "2.371733",
+    "ouverture": "2017-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Ruée vers l'orge",
+    "address": "6 Rue des Fontaines du Temple, 75003 Paris",
+    "zone": 75003,
+    "latitude": "48.865642",
+    "longitude": "2.359604",
+    "ouverture": "2017-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bières et Paix",
+    "address": "49 Rue Camille Pelletan 92300 Levallois-Perret",
+    "zone": 92000,
+    "latitude": "48.897400",
+    "longitude": "2.294320",
+    "ouverture": "2017-08-27T22:00:00.000Z",
+    "fermeture": "2019-10-30T23:00:00.000Z"
+  }, {
+    "name": "Grain de pression",
+    "address": "67 Grande Rue, 78480 Verneuil-sur-Seine",
+    "zone": 78000,
+    "latitude": "48.980881",
+    "longitude": "1.975257",
+    "ouverture": "2017-09-08T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Murphy",
+    "address": "3 Rue du Maine, 75014 Paris",
+    "zone": 75014,
+    "latitude": "48.840504",
+    "longitude": "2.323570",
+    "ouverture": "2017-10-01T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Doctor Beer",
+    "address": "4 Place Jacques Amyot, 77000 Melun",
+    "zone": 77000,
+    "latitude": "48.538773",
+    "longitude": "2.658135",
+    "ouverture": "2017-11-30T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Orge & Houblon - Rambouillet",
+    "address": "14 Rue Gustave Eiffel, 78120 Rambouillet",
+    "zone": 78000,
+    "latitude": "48.624221",
+    "longitude": "1.825861",
+    "ouverture": "2017-12-25T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "V and B - Servon",
+    "address": "6 Rue Georges Truffaut, 77170 Servon",
+    "zone": 77000,
+    "latitude": "48.710476",
+    "longitude": "2.584983",
+    "ouverture": "2018-03-14T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Hello my beer",
+    "address": "16 Rue de Ferrare, 77920 Fontainebleau",
+    "zone": 77000,
+    "latitude": "48.404110",
+    "longitude": "2.697948",
+    "ouverture": "2018-06-25T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "V and B - Brétigny-sur-Orge",
+    "address": "12 Rue du Poitou, 91220 Brétigny-sur-Orge",
+    "zone": 91000,
+    "latitude": "48.589201",
+    "longitude": "2.300940",
+    "ouverture": "2018-06-29T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Des blondes et des brunes",
+    "address": "18-20 Rue de la Butte aux Cailles, 75013 Paris",
+    "zone": 75013,
+    "latitude": "48.827939",
+    "longitude": "2.350770",
+    "ouverture": "2018-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "The Beer and the Lady",
+    "address": "2 Rue de la Bidassoa, 75020 Paris",
+    "zone": 75020,
+    "latitude": "48.865177",
+    "longitude": "2.395479",
+    "ouverture": "2018-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Vape & Beer",
+    "address": "88 bis Boulevard de Port-Royal, 75014 Paris",
+    "zone": 75014,
+    "latitude": "48.839204",
+    "longitude": "2.339301",
+    "ouverture": "2018-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bièrcail",
+    "address": "14 Rue Gabriel Péri, 78800 Houilles",
+    "zone": 78000,
+    "latitude": "48.925123",
+    "longitude": "2.188587",
+    "ouverture": "2018-07-28T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Décapsuleur",
+    "address": "3 Rue des Pelletiers, 77260 La Ferté-sous-Jouarre",
+    "zone": 77000,
+    "latitude": "48.949110",
+    "longitude": "3.131096",
+    "ouverture": "2018-09-13T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Cave à Bières d'Orsay",
+    "address": "27 Rue Archange, 91400 Orsay",
+    "zone": 91000,
+    "latitude": "48.698284",
+    "longitude": "2.187203",
+    "ouverture": "2018-10-04T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "V and B - Villabé",
+    "address": "3 Route de Villoison, 91100 Villabé",
+    "zone": 91000,
+    "latitude": "48.587045",
+    "longitude": "2.449467",
+    "ouverture": "2018-10-11T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "CVB&CO",
+    "address": "42 Rue d'Estienne d'Orves, 91370 Verrières-le-Buisson",
+    "zone": 91000,
+    "latitude": "48.740901",
+    "longitude": "2.251803",
+    "ouverture": "2018-10-15T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "BeerZ - Dourdan",
+    "address": "17 Rue Haute Foulerie, 91410 Dourdan",
+    "zone": 91000,
+    "latitude": "48.529428",
+    "longitude": "2.009936",
+    "ouverture": "2018-11-23T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Mozaik",
+    "address": "19 Rue de Penthièvre, 75008 Paris",
+    "zone": 75008,
+    "latitude": "48.872856",
+    "longitude": "2.316312",
+    "ouverture": "2019-01-14T23:00:00.000Z",
+    "fermeture": "2020-01-24T23:00:00.000Z"
+  }, {
+    "name": "Caisse de Bières - Sèvres",
+    "address": "2 Place de Marivel, 92310 Sèvres",
+    "zone": 92000,
+    "latitude": "48.822900",
+    "longitude": "2.217600",
+    "ouverture": "2019-04-04T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "V and B - Cormeilles-en-Parisis",
+    "address": "2 Allée des Coudrées, 95240 Cormeilles-en-Parisis",
+    "zone": 95000,
+    "latitude": "48.950561",
+    "longitude": "2.203470",
+    "ouverture": "2019-04-07T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bear Cave",
+    "address": "71 Rue du Bournard, 92700 Colombes",
+    "zone": 92000,
+    "latitude": "48.923300",
+    "longitude": "2.256251",
+    "ouverture": "2019-06-05T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "B.E.E.R. Paris",
+    "address": "3 Rue de la Forge Royale, 75011 Paris",
+    "zone": 75011,
+    "latitude": "48.850799",
+    "longitude": "2.380063",
+    "ouverture": "2019-06-30T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bière bodoma",
+    "address": "79 Boulevard Voltaire, 75011 Paris",
+    "zone": 75011,
+    "latitude": "48.860484",
+    "longitude": "2.376117",
+    "ouverture": "2019-07-01T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Ravitailleur",
+    "address": "8 Rue Marsoulan, 75012 Paris",
+    "zone": 75012,
+    "latitude": "48.845566",
+    "longitude": "2.403036",
+    "ouverture": "2019-09-25T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "V and B - Ormesson-sur-Marne",
+    "address": "9 Avenue de l'Hippodrome, 94510 La Queue-en-Brie",
+    "zone": 94000,
+    "latitude": "48.800896",
+    "longitude": "2.556254",
+    "ouverture": "2019-10-03T22:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Craft Beers & Cie - Saint-Cloud (Nicolas)",
+    "address": "12 bis Rue Dailly, 92210 Saint-Cloud",
+    "zone": 92000,
+    "latitude": "48.843488",
+    "longitude": "2.220752",
+    "ouverture": "2019-10-31T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Torche (Orge & Houblon)",
+    "address": "103 Boulevard Voltaire, 75011 Paris",
+    "zone": 75011,
+    "latitude": "48.859076",
+    "longitude": "2.378385",
+    "ouverture": "2019-12-25T23:00:00.000Z",
+    "fermeture": null
+  }, {
+    "name": "Bières à l'affût - Thiais",
+    "address": "7 Esplanade Auguste Perret, 94320 Thiais",
+    "zone": 94000,
+    "latitude": "48.762698",
+    "longitude": "2.369276",
+    "ouverture": "2020-03-31T22:00:00.000Z",
+    "fermeture": null
+    }, {
+      "name": "V and B Agen",
+      "address": "Avenue Du Général Leclerc Zac Agen Sud - 47000 Agen",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+    }, {
+      "name": "V and B Allonnes",
+      "address": "Zac Du Vivier - 72700 Allonnes",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Angers",
+      "address": "36, Boulevard Gaston Birgé - 49000 Angers",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Arras",
+      "address": "3 Rue Copernic - 62000 Arras",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Auray",
+      "address": "9, Rue D’irlande Porte Océane - 56400 Auray",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Bègles",
+      "address": "Rue Louis Blériot Zi Tartifume - 33130 Bègles",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Chalezeule",
+      "address": "2, Rue Du Valset Zi Thise Chalezeule - 25220 Chalezeule",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Mérignac",
+      "address": "Rue Jacques Anquetil - 33700 Mérignac",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Gouesnou",
+      "address": "9, Rue Gaston Planté Zi Kergaradec - 29850 Gouesnou",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Châteaubriant",
+      "address": "Avenue Du Général Patton Zi Route De St Nazaire - 44110 Châteaubriant",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Château-Gontier",
+      "address": "33, Rue Georges Clémenceau - 53200 Château-Gontier",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Cholet",
+      "address": "4 Boulevard Du Poitou - 49300 Cholet",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Aubière",
+      "address": "9 Bis, Rue De L'industrie - 63170 Aubière",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Fougères",
+      "address": "9, Rue Des Français Libres Au Dessus De Buffalo Grill - 35300 Fougères",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Fougères",
+      "address": "9, Rue Des Français Libres Au Dessus De Buffalo Grill - 35300 Fougères",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B La Flèche",
+      "address": "12, Avenue D’obernkirchen - 72200 La Flèche",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B La Roche-sur-Yon",
+      "address": "10, Rue Henri Aucher Zone Commerciale Acti Sud - 85000 La Roche-sur-Yon",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B La Teste-de-Buch",
+      "address": "1 Boulevard De La Curepipe - 33115 La Teste-de-Buch",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Saint-Berthevin",
+      "address": "Bd Louis Armandza La Boutellerie - 53940 Saint-Berthevin",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Limoges",
+      "address": "20 Rue Frédéric Bastiat - 87000 Limoges",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Lorient",
+      "address": "152, Rue Du Colonel Jean Muller - 56100 Lorient",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Mâcon",
+      "address": "111, Route Lyon - 71000 Mâcon",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Mayenne",
+      "address": "Boulevard Jean Monnet - 53100 Mayenne",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Montauban",
+      "address": "2, Rue Voltaire Zi Nord - 82000 Montauban",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Nantes",
+      "address": "22 Rue Du Marché Commun - 44000 Nantes",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Narbonne",
+      "address": "Route De Perpignan Forum Sud - 11100 Narbonne",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Niort",
+      "address": "17 Rue Jean Couzinet Espace Mendès France 1 - 79000 Niort",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Olivet",
+      "address": "Parc D'activités Des Aulnaies 1470, Rue De La Bergeresse - 45160 Olivet",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Cabestany",
+      "address": "22, Rue Michel Carre Zac Mas Guerido - 66330 Cabestany",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Ploërmel",
+      "address": "Zone Du Bois Vert - 56800 Ploërmel",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Poitiers",
+      "address": "31, Route De Parthenay Zone Commerciale De La Demi-Lune - 86000 Poitiers",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Saint-Thuriau",
+      "address": "Rue Joseph Quilliou - 56300 Saint-Thuriau",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Quimper",
+      "address": "6, Avenue Ti Douar - 29000 Quimper",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Rennes",
+      "address": "222, Route De Lorient Parking Rexel - 35000 Rennes",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Rezé",
+      "address": "44, Rue Ernest Sauvestre - 44400 Rezé",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Sablé-sur-Sarthe",
+      "address": "Zac La Tuilerie - 72300 Sablé-sur-Sarthe",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Villebernier",
+      "address": "Boulevard Des Demoiselles - 49400 Villebernier",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Langueux",
+      "address": "65, Rue De Brest - 22360 Langueux",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Agneaux",
+      "address": "54, Rue Denis Papin - 50180 Agneaux",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Trignac",
+      "address": "Rue Des Aigrettes - 44570 Trignac",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Toulouse",
+      "address": "33, Route De Bayonne - 31000 Toulouse",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Tours",
+      "address": "194 Avenue Maginot - 37000 Tours",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Séné",
+      "address": "22, Rue D’alsace/Zac Du Poulfan - 56860 Séné",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Vern-sur-Seiche",
+      "address": "5, Rue Chantepie - 35770 Vern-sur-Seiche",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Azé",
+      "address": "Zone De La Fougetterie - 53200 Azé",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Châtellerault",
+      "address": "Rue C. Nungesser Et F. Coli - 86100 Châtellerault",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Poitiers",
+      "address": "189 Avenue Du 8 Mai 1945 - 86000 Poitiers",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Blois",
+      "address": "120 Avenue De Vendôme - 41000 Blois",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Chambray-lès-Tours",
+      "address": "15 Rue Henry Potez - 37170 Chambray-lès-Tours",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Angoulême",
+      "address": "11 Rue De Rabion - 16000 Angoulême",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Ingré",
+      "address": "15 Rue Pierre Et Marie Curie - 45140 Ingré",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Sainte-Verge",
+      "address": "Rte De Saumur - 145 Avenue Emile Zola - 79100 Sainte-Verge",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Bergerac",
+      "address": "95 Avenue Charles De Gaulle - 24100 Bergerac",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B La Ferté-Bernard",
+      "address": "5 Rue Alfred Marchand - 72400 La Ferté-Bernard",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Rochefort",
+      "address": "95, Rue Des Pêcheurs D'islande - 17300 Rochefort",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Bourg-lès-Valence",
+      "address": "99 Avenue De Lyon - 26500 Bourg-lès-Valence",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Le Mans",
+      "address": "339 Avenue Rhin Et Danube - Espace Thomas Edison - 72000 Le Mans",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Royan",
+      "address": "28 Rue Antoine - Laurent De Lavoisier - 17200 Royan",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Avrillé",
+      "address": "Zi Croix Cadeau - 49240 Avrillé",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Bordeaux",
+      "address": "5 Rue De La Motte Picquet - 33000 Bordeaux",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Langon",
+      "address": "3 Rue Alexandre Ii - 33210 Langon",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Montélimar",
+      "address": "122, Route De Châteauneuf - 26200 Montélimar",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Saint-Médard-en-Jalles",
+      "address": "165 Avenue Du Général De Gaulle - 33160 Saint-Médard-en-Jalles",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B La Roche-sur-Yon",
+      "address": "Rue Claude Chappe - Zi De Beaupuy - 85000 La Roche-sur-Yon",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Évron",
+      "address": "Zi Des Nochetières - 53600 Évron",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Castres",
+      "address": "20 Rue Henri Le Chatelier - 81100 Castres",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Épagny",
+      "address": "300 Rue Des Peupliers - 74330 Épagny",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Portet-sur-Garonne",
+      "address": "8 Chemin Des Genêts - 31120 Portet-sur-Garonne",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Olonne-sur-Mer",
+      "address": "Rue Des Oeillets - 85340 Olonne-sur-Mer",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Lattes",
+      "address": "Centre Commercial Le Solis - 34970 Lattes",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Vitré",
+      "address": "4 Rue Du Fougeray - 35500 Vitré",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Pornic",
+      "address": "17, Rue Jean Monnet - 44210 Pornic",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Beauvais",
+      "address": "30 Rue Arago - 60000 Beauvais",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Redon",
+      "address": "9 Rue Joseph Ricordel - 35600 Redon",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Mondeville",
+      "address": "Route De Paris - 14120 Mondeville",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Gonfreville-l'Orcher",
+      "address": "10 Rue De La Ferme Dambuc - 76700 Gonfreville-l'Orcher",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Vannes",
+      "address": "30 Rue Ernest Cognac-Jay - 56000 Vannes",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Bayonne",
+      "address": "Chemin De Hayet - 64100 Bayonne",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Morschwiller-le-Bas",
+      "address": "5 Avenue Jean Monnet - 68790 Morschwiller-le-Bas",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Plérin",
+      "address": "Rue Du Pont À L'anglais - 22190 Plérin",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "V and B Concarneau",
+      "address": "Rue Aimé Césaire - Zac De Colguen - 29900 Concarneau",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "In De Vrede",
+      "address": " Donkerstraat 13, 8640 Vleteren, Belgium",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": " Struise Beer Shop",
+      "address": " Burg 15, 8000 Brugge, Belgium",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Etre Gourmet",
+      "address": "Chaussée de Wavre 504, 1390 Grez-Doiceau, Belgium",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": " Bierwinkel De Bierloods",
+      "address": "Staatsbaan 65, 9991 Adegem",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Bierhandle Willems",
+      "address": "Leopoldstraat 26, 2280 Grobbendonk",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": " Pelgrims",
+      "address": "117 Langdorpsesteenweg & Lindekensstraat 21, Aarschot",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": " Noel Cuvelier’s",
+      "address": "30 Abelstationsplein, Abele",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Brouwershuis",
+      "address": "42 Molenstraat, Baarle Hertog",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": " Bierland",
+      "address": "Neerstraat 83, Hamme (Vlaanderen), 9220, Belgium",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": " Brasserie Vanuxeem",
+      "address": "Rue d’Armentières 150, 7782 Ploegsteert",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+    }
+]
