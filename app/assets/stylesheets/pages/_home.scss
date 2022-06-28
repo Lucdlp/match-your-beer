@@ -396,6 +396,18 @@ abbr:hover::after {
   padding-left: 4px;
 }
 
+
+.match-icon {
+  width: 160px;
+  position: absolute;
+  left: 90vh;
+  top: 243vh;
+  z-index: 1;
+ // animation:spin 8s linear infinite;
+}
+
+
+
 // TOP BEERS
 
 .row-top {
