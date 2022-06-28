@@ -1,6 +1,6 @@
 <div class="container">
 
-<% if @my_favorite_beers.present? &&  @my_favorite_recipes.present?%>
+<% if @my_favorite_beers.present? || @my_favorite_recipes.present? %>
   <div class="title" id="title-favorite">
     <h2>Salut <%= current_user.first_name %>, voici tes favoris</h2>
   </div>
