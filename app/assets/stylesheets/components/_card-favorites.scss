@@ -1,3 +1,37 @@
+.text-nofav {
+  padding-top: 180px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.no-fav {
+  padding-top: 30px;
+}
+
+.btn-nofav {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  color:#34363a;
+  border-radius: 20px;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: #dfe2d7;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.btn-nofav :hover, button:active {
+  -webkit-transform: translate(0px,3px);
+  -ms-transform: translate(0px,3px);
+  transform: translate(0px,3px);
+ }
+
 .row-myfav {
   display: flex;
   justify-content: space-between;
@@ -39,16 +73,16 @@
 .myfav-icon-beers {
   width: 80px;
   position: absolute;
-  left: 470px;
-  top: 225px;
+  left: auto;
+  top: 235px;
 
 }
 
 .myfav-icon-recipes {
   width: 80px;
   position: absolute;
-  left: 1130px;
-  top: 225px;
+  left: auto;
+  top: 235px;
 
 }
 

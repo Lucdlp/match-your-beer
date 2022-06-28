@@ -86,13 +86,17 @@
         <div class="text-unlog">Vous devez vous  <a href="<%= new_user_session_path%>" id="unlog_link">connecter</a>  ou vous  <a href="<%= new_user_registration_path %>" id="unlog_link">inscrire</a>  sur Match Your Beer pour laisser un avis.</div>
       <% end %>
     </div>
+    <% if @recipe.reviews.present? %>
     <div class="show-comment">
-      <% if @recipe.reviews.present? %>
       <div id="commentaires">Les avis</div>
       <div class="rating-comment">
         <% @recipe.reviews.each do |review| %>
           <div class="rating-text"><i class="fas fa-star"></i> <strong><%=review.rating%></strong> / 5 – <%= review.comment.capitalize %></div>
         <% end %>
+        <% else %>
+        <div class="show-no-comment">
+          <div id="no-commentaires">Aucun avis n'a été posté pour “<%= @recipe.name %>”</div>
+        </div>
       <% end %>
       </div>
     </div>

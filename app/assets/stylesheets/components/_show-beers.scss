@@ -137,6 +137,15 @@ input.button-favorite {
   padding-bottom: 20px
 }
 
+#no-commentaires {
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
 .rating-text {
   font-size: 15px;
   padding-bottom: 5px;
@@ -150,6 +159,15 @@ input.button-favorite {
   padding: 40px 20px;
   height: 340px;
   width: 70%;
+}
+
+.show-no-comment {
+  padding: 40px 20px;
+  height: 340px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rating-comment {

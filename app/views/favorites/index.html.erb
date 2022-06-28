@@ -1,5 +1,6 @@
 <div class="container">
 
+<% if @my_favorite_beers.present? &&  @my_favorite_recipes.present?%>
   <div class="title" id="title-favorite">
     <h2>Salut <%= current_user.first_name %>, voici tes favoris</h2>
   </div>
@@ -97,5 +98,19 @@
     </div>
 
   <a href="#" id="haut"><i class="fas fa-arrow-up"></i> haut de page</a>
+<% else %>
+  <div class="title" id="title-favorite">
+    <h2>Salut <%= current_user.first_name %> !</h2>
 
+    <div class="text-nofav">
+      Tu n'as malheureusement pas encore de favoris.<br>
+      N'hésite pas à trouver les élus de ton <i class="fas fa-heart"></i>
+
+      <div class="no-fav">
+        <%= link_to "Je match ma bière", beers_category_index_path, class: "btn-nofav" %>
+        <%= link_to "Je match mon repas", recipes_category_index_path, class: "btn-nofav" %>
+      </div>
+    </div>
+  </div>
+<% end %>
 </div>
