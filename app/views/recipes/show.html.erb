@@ -86,7 +86,7 @@
         <div class="text-unlog">Vous devez vous  <a href="<%= new_user_session_path%>" id="unlog_link">connecter</a>  ou vous  <a href="<%= new_user_registration_path %>" id="unlog_link">inscrire</a>  sur Match Your Beer pour laisser un avis.</div>
       <% end %>
     </div>
-      <% if @recipe.reviews.present? %>
+    <% if @recipe.reviews.present? %>
     <div class="show-comment">
       <div id="commentaires">Les avis</div>
       <div class="rating-comment">
