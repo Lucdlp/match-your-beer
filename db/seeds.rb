@@ -38,7 +38,6 @@ Shop.destroy_all
 puts "Creating beers ..."
 
 filepath = "db/beers.csv"
-
 CSV.foreach(filepath, headers: :first_row) do |row|
   Beer.create(
     name: row['name'],
@@ -51,18 +50,26 @@ CSV.foreach(filepath, headers: :first_row) do |row|
     description: row['beer_description'],
     tag_list: row['tag_list'],
     photo: row['photo'],
-    photo_path: row['photo_path'],
+    photo_path: row['photo_path']
   )
 end
 
 puts "Beers created !"
 
-# filepath = "db/recipes.csv"
+puts "Creating recipes ..."
 
-# CSV.foreach(filepath, headers: :first_row) do |row|
-#   Beer.create(
-#     name: row['name'].strip
-#     ...: row['']
-#   )
-#   p row['name']
-# end
+filepath = "db/recipes.csv"
+CSV.foreach(filepath, headers: :first_row) do |row|
+  Recipe.create(
+    name: row['name'],
+    description: row['description'],
+    aliment_type: row['aliment_type'],
+    prep_time: row['prep_time'],
+    difficulty_level: row['difficulty_level'],
+    tag_list: row['tag_list'],
+    photo: row['photo'],
+    photo_path: row['photo_path']
+  )
+end
+
+puts "Recipes created !"
