@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row-recipe">
-    <img src="https://i.pinimg.com/736x/06/dc/96/06dc9657210de528e6fb34d7b1d37ee3.jpg" alt="">
+    <%= image_tag(@recipe.photo_path) %>
     <div class="column-recipe">
       <div class="head">
         <div class="show-name"><%= @recipe.name %></div>
@@ -24,7 +24,9 @@
       <div class="show-text"><%= @recipe.difficulty_level %></div>
 
     <div class="show-ingredients">
-      <b>Ingrédients pour 4 personnes</b><br>
+      <%= @recipe.aliment_type %>
+      <%# La mise en page prévue : %>
+      <%# <b>Ingrédients pour 4 personnes</b><br>
       <p>- 4 truites <br>
       - 1 citron jaune (non traité) <br>
       - 1 douzaine de gousses d'ail en chemise <br>
@@ -32,10 +34,12 @@
       - 4 feuilles de laurier <br>
       - 4 pincées d'herbes de Provence <br>
       - 8 c.à.s d'huile d'olive <br>
-      - sel & poivre</p>
+      - sel & poivre</p> %>
     </div>
     <div class="show-description">
-      <p><b>Etape 1</b><br>
+      <%= @recipe.description %>
+      <%# La mise en page prévue : %>
+      <%# <p><b>Etape 1</b><br>
       Séparer les blancs des jaunes d'oeufs. <br>
       <br>
       <b>Etape 2</b><br>
@@ -68,7 +72,7 @@
       <br>
       <b>Etape 10</b><br>
       Saupoudrer de cacao.
-      </p>
+      </p> %>
     </div>
     </div>
   </div>
