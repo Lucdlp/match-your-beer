@@ -22,7 +22,9 @@
   <div class="wrapper">
   <%= link_to beer_path(beer), class:"link-product" do %>
   <div class="container-product-list">
-    <div class="top"></div>
+    <div class="top">
+    <%= image_tag(beer.photo_path) %>
+    </div>
     <div class="bottom">
       <div class="details">
         <h1><%= beer.name %></h1>
@@ -57,5 +59,5 @@
 
   <% end %>
   </div>
-
+<a href="#" id="haut"><i class="fas fa-arrow-up"></i> haut de page</a>
 </div>
