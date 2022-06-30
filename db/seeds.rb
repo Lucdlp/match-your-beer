@@ -29,7 +29,7 @@ filepath = "db/shops.json"
 database_shops = File.read(filepath)
 shops = JSON.parse(database_shops)
 
-puts "Creating shops, beers..."
+puts "Creating shops ..."
 shops.each do |shop|
   Shop.create(name: shop["name"], address: shop["address"])
 end
