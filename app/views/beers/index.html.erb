@@ -19,37 +19,37 @@
 
   <% @beers.each do |beer| %>
 
-  <div class="wrapper">
-  <%= link_to beer_path(beer), class:"link-product" do %>
-  <div class="container-product-list">
-    <div class="top">
+  <div class="wrapper-beer">
+  <%= link_to beer_path(beer), class:"link-product-beer" do %>
+  <div class="container-product-list-beer">
+    <div class="top-beer">
     <%= image_tag(beer.photo_path) %>
     </div>
-    <div class="bottom">
-      <div class="details">
+    <div class="bottom-beer">
+      <div class="details-beer">
         <h1><%= beer.name %></h1>
       </div>
     </div>
   </div>
-  <div class="inside-product">
-    <div class="icon-product"><i class="fas fa-info fa-lg"></i></div>
-    <div class="contents">
+  <div class="inside-product-beer">
+    <div class="icon-product-beer"><i class="fas fa-info fa-lg"></i></div>
+    <div class="contents-beer">
       <div class="row">
         <div class="column-3 col col-6">
-          <div class="product-title">Brasserie</div>
-          <div class="product-text"><%= beer.brewery %></div>
-          <div class="product-title">Type</div>
-          <div class="product-text"><%= beer.color %></div>
-          <div class="product-title">Style</div>
-          <div class="product-text"><%= beer.style %></div>
+          <div class="product-title-beer">Brasserie</div>
+          <div class="product-text-beer"><%= beer.brewery %></div>
+          <div class="product-title-beer">Type</div>
+          <div class="product-text-beer"><%= beer.color %></div>
+          <div class="product-title-beer">Style</div>
+          <div class="product-text-beer"><%= beer.style %></div>
         </div>
         <div class="col col-6">
-          <div class="product-title">Origine</div>
-          <div class="product-text"><%= beer.country %></div>
-          <div class="product-title">Alcool</div>
-          <div class="product-text"><%= beer.alcohol_level %> %</div>
-          <div class="product-title">IBU</div>
-          <div class="product-text"><%= beer.ibu_level %></div>
+          <div class="product-title-beer">Origine</div>
+          <div class="product-text-beer"><%= beer.country %></div>
+          <div class="product-title-beer">Alcool</div>
+          <div class="product-text-beer"><%= beer.alcohol_level %> %</div>
+          <div class="product-title-beer">IBU</div>
+          <div class="product-text-beer"><%= beer.ibu_level %></div>
         </div>
       </div>
     </div>

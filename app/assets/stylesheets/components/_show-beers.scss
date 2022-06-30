@@ -4,6 +4,11 @@
   display: flex;
   position: relative;
   height: fit-content;
+
+}
+
+.show-img-beer {
+  display: flex;
   align-items: center;
 }
 
@@ -61,12 +66,23 @@
   text-transform: uppercase;
 }
 
+.nan {
+  padding-bottom: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  opacity: 0.4;
+}
+
 .show-text {
   padding-bottom: 10px;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-align: left;
+}
+.show-description {
+  padding-top: 10px;
 }
 
 .show-shops {
