@@ -745,7 +745,7 @@
       "fermeture": null
   }, {
       "name": "V and B Angers",
-      "address": "36, Boulevard Gaston Birgé - 49000 Angers",
+      "address": "36 Boulevard Gaston Birgé - 49000 Angers",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -761,7 +761,7 @@
       "fermeture": null
   }, {
       "name": "V and B Auray",
-      "address": "9, Rue D’irlande Porte Océane - 56400 Auray",
+      "address": "9 Rue D’irlande Porte Océane - 56400 Auray",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -777,7 +777,7 @@
       "fermeture": null
   }, {
       "name": "V and B Chalezeule",
-      "address": "2, Rue Du Valset Zi Thise Chalezeule - 25220 Chalezeule",
+      "address": "2 Rue Du Valset Zi Thise Chalezeule - 25220 Chalezeule",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -793,7 +793,7 @@
       "fermeture": null
   }, {
       "name": "V and B Gouesnou",
-      "address": "9, Rue Gaston Planté Zi Kergaradec - 29850 Gouesnou",
+      "address": "9 Rue Gaston Planté Zi Kergaradec - 29850 Gouesnou",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -809,7 +809,7 @@
       "fermeture": null
   }, {
       "name": "V and B Château-Gontier",
-      "address": "33, Rue Georges Clémenceau - 53200 Château-Gontier",
+      "address": "33 Rue Georges Clémenceau - 53200 Château-Gontier",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -825,7 +825,7 @@
       "fermeture": null
   }, {
       "name": "V and B Aubière",
-      "address": "9 Bis, Rue De L'industrie - 63170 Aubière",
+      "address": "9 Bis Rue De L'industrie - 63170 Aubière",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -833,15 +833,7 @@
       "fermeture": null
   }, {
       "name": "V and B Fougères",
-      "address": "9, Rue Des Français Libres Au Dessus De Buffalo Grill - 35300 Fougères",
-      "zone": null,
-      "latitude": null,
-      "longitude": null,
-      "ouverture": null,
-      "fermeture": null
-  }, {
-      "name": "V and B Fougères",
-      "address": "9, Rue Des Français Libres Au Dessus De Buffalo Grill - 35300 Fougères",
+      "address": "9 Rue Des Français Libres - 35300 Fougères",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -849,7 +841,7 @@
       "fermeture": null
   }, {
       "name": "V and B La Flèche",
-      "address": "12, Avenue D’obernkirchen - 72200 La Flèche",
+      "address": "12 Avenue D’obernkirchen - 72200 La Flèche",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -857,7 +849,7 @@
       "fermeture": null
   }, {
       "name": "V and B La Roche-sur-Yon",
-      "address": "10, Rue Henri Aucher Zone Commerciale Acti Sud - 85000 La Roche-sur-Yon",
+      "address": "10 Rue Henri Aucher - 85000 La Roche-sur-Yon",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -889,7 +881,7 @@
       "fermeture": null
   }, {
       "name": "V and B Lorient",
-      "address": "152, Rue Du Colonel Jean Muller - 56100 Lorient",
+      "address": "152 Rue Du Colonel Jean Muller - 56100 Lorient",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -897,7 +889,7 @@
       "fermeture": null
   }, {
       "name": "V and B Mâcon",
-      "address": "111, Route Lyon - 71000 Mâcon",
+      "address": "111 Route Lyon - 71000 Mâcon",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -913,7 +905,7 @@
       "fermeture": null
   }, {
       "name": "V and B Montauban",
-      "address": "2, Rue Voltaire Zi Nord - 82000 Montauban",
+      "address": "2 Rue Voltaire Zi Nord - 82000 Montauban",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -945,7 +937,7 @@
       "fermeture": null
   }, {
       "name": "V and B Olivet",
-      "address": "Parc D'activités Des Aulnaies 1470, Rue De La Bergeresse - 45160 Olivet",
+      "address": "Rue De La Bergeresse - 45160 Olivet",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -953,7 +945,7 @@
       "fermeture": null
   }, {
       "name": "V and B Cabestany",
-      "address": "22, Rue Michel Carre Zac Mas Guerido - 66330 Cabestany",
+      "address": "22 Rue Michel Carre Zac Mas Guerido - 66330 Cabestany",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -969,7 +961,7 @@
       "fermeture": null
   }, {
       "name": "V and B Poitiers",
-      "address": "31, Route De Parthenay Zone Commerciale De La Demi-Lune - 86000 Poitiers",
+      "address": "31 Route De Parthenay - 86000 Poitiers",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -985,7 +977,7 @@
       "fermeture": null
   }, {
       "name": "V and B Quimper",
-      "address": "6, Avenue Ti Douar - 29000 Quimper",
+      "address": "6 Avenue Ti Douar - 29000 Quimper",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -993,7 +985,7 @@
       "fermeture": null
   }, {
       "name": "V and B Rennes",
-      "address": "222, Route De Lorient Parking Rexel - 35000 Rennes",
+      "address": "222 Route De Lorient Parking Rexel - 35000 Rennes",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1001,7 +993,7 @@
       "fermeture": null
   }, {
       "name": "V and B Rezé",
-      "address": "44, Rue Ernest Sauvestre - 44400 Rezé",
+      "address": "44 Rue Ernest Sauvestre - 44400 Rezé",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1025,7 +1017,7 @@
       "fermeture": null
   }, {
       "name": "V and B Langueux",
-      "address": "65, Rue De Brest - 22360 Langueux",
+      "address": "65 Rue De Brest - 22360 Langueux",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1033,7 +1025,7 @@
       "fermeture": null
   }, {
       "name": "V and B Agneaux",
-      "address": "54, Rue Denis Papin - 50180 Agneaux",
+      "address": "54 Rue Denis Papin - 50180 Agneaux",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1049,7 +1041,7 @@
       "fermeture": null
   }, {
       "name": "V and B Toulouse",
-      "address": "33, Route De Bayonne - 31000 Toulouse",
+      "address": "33 Route De Bayonne - 31000 Toulouse",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1065,7 +1057,7 @@
       "fermeture": null
   }, {
       "name": "V and B Séné",
-      "address": "22, Rue D’alsace/Zac Du Poulfan - 56860 Séné",
+      "address": "22 Rue D’alsace/Zac Du Poulfan - 56860 Séné",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1073,7 +1065,7 @@
       "fermeture": null
   }, {
       "name": "V and B Vern-sur-Seiche",
-      "address": "5, Rue Chantepie - 35770 Vern-sur-Seiche",
+      "address": "5 Rue Chantepie - 35770 Vern-sur-Seiche",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1137,7 +1129,7 @@
       "fermeture": null
   }, {
       "name": "V and B Sainte-Verge",
-      "address": "Rte De Saumur - 145 Avenue Emile Zola - 79100 Sainte-Verge",
+      "address": "145 Avenue Emile Zola - 79100 Sainte-Verge",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1177,7 +1169,7 @@
       "fermeture": null
   }, {
       "name": "V and B Le Mans",
-      "address": "339 Avenue Rhin Et Danube - Espace Thomas Edison - 72000 Le Mans",
+      "address": "339 Avenue Rhin Et Danube - 72000 Le Mans",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1217,7 +1209,7 @@
       "fermeture": null
   }, {
       "name": "V and B Montélimar",
-      "address": "122, Route De Châteauneuf - 26200 Montélimar",
+      "address": "122 Route De Châteauneuf - 26200 Montélimar",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1233,7 +1225,7 @@
       "fermeture": null
   }, {
       "name": "V and B La Roche-sur-Yon",
-      "address": "Rue Claude Chappe - Zi De Beaupuy - 85000 La Roche-sur-Yon",
+      "address": "Rue Claude Chappe - 85000 La Roche-sur-Yon",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1297,7 +1289,7 @@
       "fermeture": null
   }, {
       "name": "V and B Pornic",
-      "address": "17, Rue Jean Monnet - 44210 Pornic",
+      "address": "17 Rue Jean Monnet - 44210 Pornic",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1369,7 +1361,7 @@
       "fermeture": null
   }, {
       "name": "V and B Concarneau",
-      "address": "Rue Aimé Césaire - Zac De Colguen - 29900 Concarneau",
+      "address": "Rue Aimé Césaire - 29900 Concarneau",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1377,15 +1369,15 @@
       "fermeture": null
   }, {
       "name": "In De Vrede",
-      "address": " Donkerstraat 13, 8640 Vleteren, Belgium",
+      "address": "Donkerstraat 13 - 8640 Vleteren",
       "zone": null,
       "latitude": null,
       "longitude": null,
       "ouverture": null,
       "fermeture": null
   }, {
-      "name": " Struise Beer Shop",
-      "address": " Burg 15, 8000 Brugge, Belgium",
+      "name": "Struise Beer Shop",
+      "address": "Burg 15 - 8000 Brugge",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1393,15 +1385,15 @@
       "fermeture": null
   }, {
       "name": "Etre Gourmet",
-      "address": "Chaussée de Wavre 504, 1390 Grez-Doiceau, Belgium",
+      "address": "Chaussée de Wavre 504 - 1390 Grez-Doiceau",
       "zone": null,
       "latitude": null,
       "longitude": null,
       "ouverture": null,
       "fermeture": null
   }, {
-      "name": " Bierwinkel De Bierloods",
-      "address": "Staatsbaan 65, 9991 Adegem",
+      "name": "Bierwinkel De Bierloods",
+      "address": "Staatsbaan 65 - 9991 Adegem",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1409,23 +1401,23 @@
       "fermeture": null
   }, {
       "name": "Bierhandle Willems",
-      "address": "Leopoldstraat 26, 2280 Grobbendonk",
+      "address": "Leopoldstraat 26 - 2280 Grobbendonk",
       "zone": null,
       "latitude": null,
       "longitude": null,
       "ouverture": null,
       "fermeture": null
   }, {
-      "name": " Pelgrims",
-      "address": "117 Langdorpsesteenweg & Lindekensstraat 21, Aarschot",
+      "name": "Pelgrims",
+      "address": "Langdorpsesteenweg 117 - Aarschot",
       "zone": null,
       "latitude": null,
       "longitude": null,
       "ouverture": null,
       "fermeture": null
   }, {
-      "name": " Noel Cuvelier’s",
-      "address": "30 Abelstationsplein, Abele",
+      "name": "Noel Cuvelier’s",
+      "address": "Abelstationsplein 30 - Abele",
       "zone": null,
       "latitude": null,
       "longitude": null,
@@ -1433,23 +1425,199 @@
       "fermeture": null
   }, {
       "name": "Brouwershuis",
-      "address": "42 Molenstraat, Baarle Hertog",
+      "address": "Molenstraat 42 - Baarle Hertog",
       "zone": null,
       "latitude": null,
       "longitude": null,
       "ouverture": null,
       "fermeture": null
   }, {
-      "name": " Bierland",
-      "address": "Neerstraat 83, Hamme (Vlaanderen), 9220, Belgium",
+      "name": "Bierland",
+      "address": "Neerstraat 83 - 9220 Hamme",
       "zone": null,
       "latitude": null,
       "longitude": null,
       "ouverture": null,
       "fermeture": null
   }, {
-      "name": " Brasserie Vanuxeem",
-      "address": "Rue d’Armentières 150, 7782 Ploegsteert",
+      "name": "De Biertempel",
+      "address": "Rue du Marché Aux Herbes 56, 1000 Bruxelles",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Huens",
+      "address": "Avenue Adolphe Buyl 3, 1050 Ixelles",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Le Barboteur",
+      "address": "Avenue Louis Bertrand 23, 1030 Schaerbeek",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Les Fleurs du Malt",
+      "address": "Avenue du Roi Chevalier 45, 1200 Woluwe-Saint-Lambert",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Malt Attacks",
+      "address": "Avenue Jean Volders 18, 1060 Saint-Gilles",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Malting Pot",
+      "address": "Rue Scarron 50, 1050 Ixelles",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Prik en Tik",
+      "address": "Rue Steyls 118, 1020 Bruxelles",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Brussels Beer Project",
+      "address": "Rue Antoine Dansaert 188, 1000 Bruxelles",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Brasserie de la Senne",
+      "address": "Drève Anna Boch 19, 1000 Bruxelles",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Bières et tout le bazar",
+      "address": "Rue Duquesnoy 3, 1000 Bruxelles",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "BeerLovers'Shop LLN",
+      "address": "Rue des Wallons 8, 1348 Ottignies-Louvain-la-Neuve",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Craft Beer Market de Namur",
+      "address": "Marché Saint-Remy 14, 5000 Namur",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Hoppy House",
+      "address": "Chaussée de Tubize 369, 1420 Braine-l'Alleud",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Beer Mania",
+      "address": "Chau. de Wavre 174, 1050 Bruxelles",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "La Houblonnière",
+      "address": "Rue des Combattants 39, 7780 Comines-Warneton",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Le Palais de la Bière",
+      "address": "Rue de Roubaix 40, 7520 Tournai",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Drink factory",
+      "address": "Chaussée du Roeulx 95, 7000 Mons",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "A c't'heure dînant!",
+      "address": "Rue Grande 146, 5500 Dinant",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Craft and Beers",
+      "address": "Rue Grinfaux 44, 7181 Seneffe",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Chez Tonton Henri",
+      "address": "Chaussée Montgomery 122, 7611 Rumes",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Beer, Wine & Spirit",
+      "address": "Rue de l'Artisanat 14, 5020 Namur",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Les Plaisirs du 604",
+      "address": "Chée de Charleroi 604, 6220 Fleurus",
+      "zone": null,
+      "latitude": null,
+      "longitude": null,
+      "ouverture": null,
+      "fermeture": null
+  }, {
+      "name": "Brasserie Vanuxeem",
+      "address": "Rue d’Armentières 150 - 7782 Ploegsteert",
       "zone": null,
       "latitude": null,
       "longitude": null,
