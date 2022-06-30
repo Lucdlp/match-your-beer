@@ -15,9 +15,10 @@
       </div>
 
       <div class="show-rating">
-      <% if @beer.average_rating_beer.present? %>
-        <a href="#commentaires" id="ancre"><div class="show-text"><i class="fas fa-star"></i> <strong><%= @beer.average_rating_beer %></strong> / 5</div></a>
+      <% if @beer.average_rating_beer.nan? %>
+        <a href="#commentaires" id="ancre"><div class="show-text"><i class="fas fa-star"></i> <strong> 0 </strong> / 5</div></a>
       <% else %>
+        <a href="#commentaires" id="ancre"><div class="show-text"><i class="fas fa-star"></i> <strong><%= @beer.average_rating_beer %></strong> / 5</div></a>
         <a href="#commentaires" id="ancre"><div class="show-text">Aucun commentaire</a>
       <% end %>
       </div>
