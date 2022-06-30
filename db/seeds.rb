@@ -25,15 +25,15 @@ Shop.destroy_all
 # Shop.create!(name: 'La riviere de la binouse', address: '25 rue Georges Lassalle, 64340 Boucau')
 # Shop.create!(name: 'VnB', address: '25 avenue Jean Leon Laporte, 64600 Anglet')
 
-# filepath = "db/shops.json"
-# database_shops = File.read(filepath)
-# shops = JSON.parse(database_shops)
+filepath = "db/shops.json"
+database_shops = File.read(filepath)
+shops = JSON.parse(database_shops)
 
-# puts "Creating shops, beers..."
-# shops.each do |shop|
-#   Shop.create(name: shop["name"], address: shop["address"])
-# end
-# puts "Shops created !"
+puts "Creating shops, beers..."
+shops.each do |shop|
+  Shop.create(name: shop["name"], address: shop["address"])
+end
+puts "Shops created !"
 
 puts "Creating beers ..."
 

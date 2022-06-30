@@ -28,55 +28,12 @@
       <div class="show-text"><%= @recipe.difficulty_level %></div>
 
     <div class="show-ingredients">
-      <%= @recipe.aliment_type %>
-      <%# La mise en page prévue : %>
-      <%# <b>Ingrédients pour 4 personnes</b><br>
-      <p>- 4 truites <br>
-      - 1 citron jaune (non traité) <br>
-      - 1 douzaine de gousses d'ail en chemise <br>
-      - 1 bouquet de thym <br>
-      - 4 feuilles de laurier <br>
-      - 4 pincées d'herbes de Provence <br>
-      - 8 c.à.s d'huile d'olive <br>
-      - sel & poivre</p> %>
+      <%= @recipe.aliment_type.html_safe %>
+
     </div>
     <div class="show-description">
-      <%= @recipe.description %>
-      <%# La mise en page prévue : %>
-      <%# <p><b>Etape 1</b><br>
-      Séparer les blancs des jaunes d'oeufs. <br>
-      <br>
-      <b>Etape 2</b><br>
-      Mélanger les jaunes avec le sucre roux et le sucre vanillé. <br>
-      <br>
-      <b>Etape 3</b><br>
-      Ajouter le mascarpone au fouet. <br>
-      <br>
-      <b>Etape 4</b><br>
-      Monter les blancs en neige et les incorporer délicatement à la spatule au mélange précédent. Réserver. <br>
-      <br>
-      <b>Etape 4</b><br>
-      Mouiller les biscuits dans le café rapidement avant d'en tapisser le fond du plat. <br>
-      <br>
-      <b>Etape 5</b><br>
-      Recouvrir d'une couche de crème au mascarpone puis répéter l'opération en alternant couche de biscuits et couche de crème en terminant par cette dernière. <br>
-      <br>
-      <b>Etape 6</b><br>
-      Saupoudrer de cacao. <br>
-      <br>
-      <b>Etape 7</b><br>
-      Mettre au réfrigérateur 4 heures minimum puis déguster frais. <br>
-      <br>
-      <b>Etape 8</b><br>
-      Monter les blancs en neige et les incorporer délicatement à la spatule au mélange précédent. Réserver. ÉTAPE 5
-      Mouiller les biscuits dans le café rapidement avant d'en tapisser le fond du plat. <br>
-      <br>
-      <b>Etape 9</b><br>
-      Recouvrir d'une couche de crème au mascarpone puis répéter l'opération en alternant couche de biscuits et couche de crème en terminant par cette dernière. <br>
-      <br>
-      <b>Etape 10</b><br>
-      Saupoudrer de cacao.
-      </p> %>
+      <%= @recipe.description.html_safe %>
+
     </div>
     </div>
   </div>
