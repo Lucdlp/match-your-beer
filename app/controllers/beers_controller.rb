@@ -14,6 +14,8 @@ class BeersController < ApplicationController
   def show
     @beer = Beer.find(params[:id])
     @shops = Shop.all
+    session[:tag] = "beer"
+    session[:tag_id] = @beer.id
     @review = Review.new
     @reviews = Review.all
     if user_signed_in?

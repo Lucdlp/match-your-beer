@@ -14,6 +14,8 @@ class RecipesController < ApplicationController
   def show
     @recipe = Recipe.find(params[:id])
     @favorite = Favorite.new
+    session[:tag] = "recipe"
+    session[:tag_id] = @recipe.id
     @favorite.recipe = @recipe
     @review = Review.new
   end
