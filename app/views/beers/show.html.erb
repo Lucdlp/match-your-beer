@@ -43,21 +43,19 @@
         </div>
       </div>
 
-    <div class="show-description">
+      <div class="show-description">
         <p>
         <%= @beer.description %>
         </p>
       </div>
 
-    <% if @shop.present? %>
     <hr>
     <div class="show-shops">
-      <b><i class="fas fa-map-marker-alt"></i> Où trouver cette bière ?</b>
+      <b>Où trouver cette bière ?</b>
         <% @shops.first(4).each do |shop| %>
-        <li>— <%= shop.name %></li>
+        <li><i class="fas fa-beer"></i>  <%= shop.name %></li>
         <% end %>
     </div>
-    <% end %>
 
     </div>
 

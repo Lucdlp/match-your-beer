@@ -17,7 +17,7 @@ class BeersController < ApplicationController
     @review = Review.new
     @reviews = Review.all
     if user_signed_in?
-      @shops = Shop.near([current_user.latitude, current_user.longitude], 50, units: :km)
+      @shops = Shop.near([current_user.latitude, current_user.longitude], 20, units: :km)
       @shops = Shop.all if @shops.empty?
       @markers = @shops.geocoded.map do |shop|
         {
