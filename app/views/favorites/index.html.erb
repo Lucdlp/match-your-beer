@@ -18,7 +18,8 @@
           <div class="wrapper-fav">
             <%= link_to beer_path(favorite.beer), class:"link-favorite" do %>
               <div class="container-favorite-list">
-                <div class="top">
+                <div class="top-beer">
+                <%= image_tag(favorite.beer.photo_path) %>
                 </div>
                 <div class="bottom">
                   <div class="details">
@@ -68,8 +69,8 @@
           <div class="wrapper-fav">
             <%= link_to recipe_path(favorite.recipe), class:"link-favorite" do %>
             <div class="container-favorite-list">
-              <div class="top">
-              <img class="card-favorite-img", src="https://res.cloudinary.com/dwzspwy7e/image/upload/v1656016771/cat-fruitmer_p3dvew.webp"/>
+              <div class="top-recipe">
+              <%= image_tag(favorite.recipe.photo_path) %>
               </div>
               <div class="bottom">
                 <div class="details">
