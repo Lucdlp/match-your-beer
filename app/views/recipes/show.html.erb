@@ -15,7 +15,11 @@
       </div>
 
       <div class="show-rating">
-        <a href="#commentaires" id="ancre"><div class="show-text"><i class="fas fa-star"></i> <strong><%=@recipe.average_rating_recipe%></strong> / 5</div></a>
+        <% if @recipe.average_rating_recipe.nan? %>
+        <a href="#commentaires" id="ancre"><div class="nan"><i class="fas fa-star"></i> aucune note / 5</div></a>
+        <% else %>
+        <a href="#commentaires" id="ancre"><div class="show-text"><i class="fas fa-star"></i> <strong><%= @recipe.average_rating_recipe %></strong> / 5</div></a>
+        <% end %>
       </div>
 
       <div class="show-title">Temps de préparation</div>

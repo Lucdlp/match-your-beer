@@ -1,6 +1,8 @@
 <div class="container">
   <div class="row-beer">
-    <%= image_tag(@beer.photo_path) %>
+    <div class="show-img-beer">
+      <%= image_tag(@beer.photo_path) %>
+    </div>
     <div class="column-beer">
       <div class="head">
         <div class="show-name"><%= @beer.name %></div>
@@ -15,12 +17,13 @@
       </div>
 
       <div class="show-rating">
-      <% if @beer.average_rating_beer.present? %>
+        <% if @beer.average_rating_beer.nan? %>
+        <a href="#commentaires" id="ancre"><div class="nan"><i class="fas fa-star"></i> aucune note / 5</div></a>
+        <% else %>
         <a href="#commentaires" id="ancre"><div class="show-text"><i class="fas fa-star"></i> <strong><%= @beer.average_rating_beer %></strong> / 5</div></a>
-      <% else %>
-        <a href="#commentaires" id="ancre"><div class="show-text">Aucun commentaire</a>
-      <% end %>
+        <% end %>
       </div>
+
       <div class="row">
         <div class="column-3 col col-6">
           <div class="show-title">Brasserie</div>
@@ -46,14 +49,15 @@
         </p>
       </div>
 
-<hr>
-
+    <% if @shop.present? %>
+    <hr>
     <div class="show-shops">
       <b><i class="fas fa-map-marker-alt"></i> Où trouver cette bière ?</b>
         <% @shops.first(4).each do |shop| %>
         <li>— <%= shop.name %></li>
         <% end %>
     </div>
+    <% end %>
 
     </div>
 

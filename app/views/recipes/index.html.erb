@@ -19,27 +19,27 @@
 
   <% @recipes.each do |recipe| %>
 
-  <div class="wrapper">
-  <%= link_to recipe_path(recipe), class:"link-product" do %>
-  <div class="container-product-list">
+  <div class="wrapper-recipe">
+  <%= link_to recipe_path(recipe), class:"link-product-recipe" do %>
+  <div class="container-product-list-recipe">
     <div class="top-recipe">
     <%= image_tag(recipe.photo_path) %>
     <%# <img class="card-product-img", src="https://res.cloudinary.com/dwzspwy7e/image/upload/v1656016771/cat-fruitmer_p3dvew.webp"/> %>
     </div>
-    <div class="bottom">
-      <div class="details">
+    <div class="bottom-recipe">
+      <div class="details-recipe">
         <h1><%= recipe.name %></h1>
       </div>
     </div>
   </div>
-  <div class="inside-product">
-    <div class="icon-product"><i class="fas fa-info fa-lg"></i></div>
-    <div class="contents">
+  <div class="inside-product-recipe">
+    <div class="icon-product-recipe"><i class="fas fa-info fa-lg"></i></div>
+    <div class="contents-recipe">
       <div class="row">
-          <div class="product-title">Niveau de difficulté</div>
-          <div class="product-text"><%= recipe.difficulty_level %></div>
-          <div class="product-title">Temps de préparation</div>
-          <div class="product-text"><%= recipe.prep_time %> min</div>
+          <div class="product-title-recipe">Niveau de difficulté</div>
+          <div class="product-text-recipe"><%= recipe.difficulty_level %></div>
+          <div class="product-title-recipe">Temps de préparation</div>
+          <div class="product-text-recipe"><%= recipe.prep_time %> min</div>
         </div>
       </div>
     </div>
