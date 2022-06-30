@@ -60,43 +60,33 @@
 
     <div class="row">
       <div class="column-1 col col-6">
-        <div class="label-match">Peak blonde</div>
-        <%= image_tag 'https://res.cloudinary.com/dwzspwy7e/image/upload/v1655229253/peak-blonde_h8lpho.png', class: "img-match" %>
+
+        <div class="label-match"><%= @random_beer.name %></div>
+        <%= image_tag @random_beer.photo_path, class:"img-match" %>
         <div class="row">
           <div class="column-3 col col-6">
             <div class="category-title">Brasserie</div>
-            <div class="category-text">Peak Beer</div>
+            <div class="category-text"><%= @random_beer.brewery %></div>
             <div class="category-title">Type</div>
-            <div class="category-text">Blonde</div>
+            <div class="category-text"><%= @random_beer.color %></div>
             <div class="category-title">Style</div>
-            <div class="category-text">Blonde Ale</div>
+            <div class="category-text"><%= @random_beer.style %></div>
           </div>
           <div class="col col-6">
             <div class="category-title">Origine</div>
-            <div class="category-text">Belgique</div>
+            <div class="category-text"><%= @random_beer.country %></div>
             <div class="category-title">Alcool</div>
-            <div class="category-text">6 %</div>
+            <div class="category-text"><%= @random_beer.alcohol_level %> %</div>
             <div class="category-title">
             <abbr title="Cette indication correspond à l'amertûme à la bière. Cet indice se situe sur une échelle de 0 à 90; 0 étant la bière la moins amère.">IBU<i class="fas fa-question-circle" id="icon-bulle"></i></abbr>
             </div>
-            <div class="category-text">28</div>
+            <div class="category-text"><%= @random_beer.ibu_level %></div>
           </div>
         </div>
       </div>
-      <div class="column-2 col col-6">
-      <%= image_tag "match-2.svg", class: "match-icon" %>
-        <div class="label-match">Pâtes au tofu grillé<br></div>
-        <div class="columns-4 row">
-          <!--
-          <div class="col col-6">
-            <div class="category-title">Facilité</div>
-            <div class="category-text">Facile</div>
-          </div>
-          <div class="col col-6">
-            <div class="category-title">Temps de préparation</div>
-            <div class="category-text">40 min</div>
-          </div>
-          -->
+      <div class="column-2 col col-6" style="background-image: url('<%= image_path @recipe.photo_path %>')">
+      <%= image_tag "match-2.svg", class: "patch-match" %>
+          <div class="label-match"><%= @recipe.name %></div>
         </div>
       </div>
     </div>
@@ -104,28 +94,22 @@
 </div>
 
 
+
+
 <!-- TOP BEERS -->
 <div class="section">
   <div class="container-top">
     <div class="label">— nos bières —</div>
     <div class="heading">Les plus recherchées</div>
-    <div class="row-top">
-      <div class="columns-top">
-        <img src="https://res.cloudinary.com/dwzspwy7e/image/upload/v1655229221/delta_ipa_frxevj.webp" class="img-top">
-        <div class="title-top">Delta IPA</div>
-      </div>
-      <div class="columns-top">
-        <img src="https://res.cloudinary.com/dwzspwy7e/image/upload/v1655229415/leffe-brune_mn3gby.webp" class="img-top">
-        <div class="title-top">Leffe Brune</div>
-      </div>
-      <div class="columns-top">
-        <img src="https://res.cloudinary.com/dwzspwy7e/image/upload/v1655229242/hoegaarden_sgoiv5.webp" class="img-top">
-        <div class="title-top">Hoegaarden Blanche</div>
-      </div>
-      <div class="columns-top">
-        <img src="https://res.cloudinary.com/dwzspwy7e/image/upload/v1655229295/big-mama_qun81p.png" class="img-top">
-        <div class="title-top">Big Mama<br></div>
-      </div>
+      <div class="row-top">
+      <% @beers.shuffle.first(4).each do |beer| %>
+      <%= link_to beer_path(beer) do %>
+        <div class="columns-top">
+          <%= image_tag beer.photo_path, class:"img-top" %>
+          <div class="title-top"><%= beer.name %></div>
+        </div>
+        <% end %>
+      <% end %>
     </div>
   </div>
   <br>
