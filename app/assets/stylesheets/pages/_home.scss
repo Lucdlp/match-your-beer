@@ -261,10 +261,11 @@
   text-transform: none;
 }
 
-.container-match img,
+
 .img-match {
   display: inline-block;
-  height: 64%;
+  height: 360px;
+  padding: 30px;
 }
 
 .col {
@@ -350,10 +351,7 @@
   height: 600px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-image: url('https://alice-esmeralda.com/wp-content/uploads/2019/04/meal-prep-vegan-0954-2.jpg');
-  // background-image:
-  // linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)),
-  // url('https://alice-esmeralda.com/wp-content/uploads/2019/04/meal-prep-vegan-0954-2.jpg');
+  // background-image: url('https://alice-esmeralda.com/wp-content/uploads/2019/04/meal-prep-vegan-0954-2.jpg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: repeat-x;
@@ -397,11 +395,11 @@ abbr:hover::after {
 }
 
 
-.match-icon {
+.patch-match {
   width: 130px;
   position: absolute;
   left: -65px;
-  top: 107px;
+  top: 230px;
   z-index: 1;
  // animation:spin 8s linear infinite;
 }
@@ -433,10 +431,10 @@ abbr:hover::after {
   box-shadow: 5px 5px 30px #34363a1c,
 }
 
-
 .container-top img,
 .img-top {
-  height: 200px;
+  height: 170px;
+
 }
 
 .title-top {
