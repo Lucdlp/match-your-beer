@@ -81,9 +81,10 @@
   font-weight: 500;
   text-align: left;
 }
-.show-description, p {
+
+.show-description {
   overflow: scroll;
-  height: 103px;
+  height: 100px;
   width: 550px;
 }
 

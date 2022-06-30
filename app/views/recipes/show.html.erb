@@ -2,9 +2,9 @@
   <div class="row-recipe">
     <%= image_tag(@recipe.photo_path) %>
     <div class="column-recipe">
-      <div class="head">
-        <div class="show-name"><%= @recipe.name %></div>
-        <div class="show-button-fav">
+      <div class="head-recipe">
+        <div class="show-name-recipe"><%= @recipe.name %></div>
+        <div class="show-button-fav-recipe">
           <%= simple_form_for [ @recipe, @favorite ] do |f| %>
             <%= f.hidden_field :recipe_id, value: @recipe.id %>
             <%= button_tag type: 'submit', class: "button-favorite", as: :boolean, input_html: { class: "toggle" } do %>
@@ -18,22 +18,21 @@
         <% if @recipe.average_rating_recipe.nan? %>
         <a href="#commentaires" id="ancre"><div class="nan"><i class="fas fa-star"></i> aucune note / 5</div></a>
         <% else %>
-        <a href="#commentaires" id="ancre"><div class="show-text"><i class="fas fa-star"></i> <strong><%= @recipe.average_rating_recipe %></strong> / 5</div></a>
+        <a href="#commentaires" id="ancre"><div class="show-text-recipe"><i class="fas fa-star"></i> <strong><%= @recipe.average_rating_recipe %></strong> / 5</div></a>
         <% end %>
       </div>
 
-      <div class="show-title">Temps de préparation</div>
-      <div class="show-text"><%= @recipe.prep_time %> min</div>
-      <div class="show-title">Niveau de difficulté</div>
-      <div class="show-text"><%= @recipe.difficulty_level %></div>
+      <div class="show-title-recipe">Temps de préparation</div>
+      <div class="show-text-recipe"><%= @recipe.prep_time %> min</div>
+      <div class="show-title-recipe">Niveau de difficulté</div>
+      <div class="show-text-recipe"><%= @recipe.difficulty_level %></div>
 
-    <div class="show-ingredients">
+    <div class="show-ingredients-recipe">
       <%= @recipe.aliment_type.html_safe %>
 
     </div>
-    <div class="show-description">
+    <div class="show-description-recipe">
       <%= @recipe.description.html_safe %>
-
     </div>
     </div>
   </div>

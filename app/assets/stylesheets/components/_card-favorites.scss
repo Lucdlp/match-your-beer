@@ -90,7 +90,9 @@
   padding: 20px 0 40px;
 }
 
-.wrapper-fav {
+// BEERS
+
+.wrapper-beer-fav {
   justify-content: center;
   width: 250px;
   height: 300px;
@@ -107,106 +109,104 @@
     box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
   }
 
-  .container-favorite-list {
+  .top-beer-fav, img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 205px;
+  }
+  .container-favorite-list-beer {
     width:100%;
     height:100%;
-
-    .top-beer, img {
+    .top-beer-fav {
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      height: 215px;
+      height: 230px;
     }
-    .top-recipe, img {
-      margin-top: 0;
-      height: 200px;
-      width: inherit;
-      background-size: cover;
-      object-fit: cover;
-    }
-
-    .bottom{
+    .bottom-beer-fav {
       width: 100%;
       height: 30%;
-      .details {
+      .details-beer-fav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height:100%;
         width: 100%;
         background: #DFE2D7;
         position:relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         float: center;
+        padding: 12px;
           h1 {
-            font-size: 18px;
+            font-size: 19px;
+            text-align: center;
           }
         }
       }
     }
   }
 
-  .link-favorite {
+  .link-product-beer-fav {
     text-decoration: none;
     color: #34363A;
   }
 
-  .link-favorite:hover {
+  .link-product-beer-fav:hover {
     color: #34363A;
   }
 
- .bottom, .details a {
+ .bottom-beer-fav, .details-beer-fav a {
     text-decoration: none;
   }
 
-  .inside-fav {
+  .inside-product-beer-fav {
     z-index:9;
     background: #FEC10D;
-    width: 140px;
-    height: 140px;
+    width: 135px;
+    height: 135px;
     position: absolute;
-    top: -75px;
-    right: -75px;
+    top: -70px;
+    right: -70px;
     border-radius: 0px 0px 200px 200px;
     transition: all 0.5s, border-radius 2s, top 1s;
     overflow: hidden;
-    .icon{
-      position:absolute;
-      right:90px;
-      top:85px;
+    .icon-product-beer-fav {
+      position: absolute;
+      right: 90px;
+      top: 88px;
       color: #34363A;
       opacity: 1;
-      font-size: 20px;
     }
-    &:hover{
-      width:100%;
-      right:0;
-      top:0;
+    &:hover {
+      width: 100%;
+      right: 0;
+      top: 0;
       border-radius: 0;
-      height:70%;
-      .icon{
+      height: 75%;
+      .icon-product-beer-fav {
         opacity: 0;
-        right:15px;
-        top:15px;
+        right: 15px;
+        top: 15px;
       }
-      .contents{
+      .contents-beer-fav {
         opacity: 1;
         transform: scale(1);
         transform: translateY(0);
       }
     }
-    .contents{
-      padding: 2%;
+    .contents-beer-fav {
+      padding: 5%;
       opacity: 0;
       transform: scale(0.5);
       transform: translateY(-200%);
       transition: opacity 0.2s, transform 0.8s;
       .row {
-        padding-top: 7px;
+        padding-top: 10px;
       }
     }
   }
 
-  .favorite-title {
+  .product-title-beer-fav {
     display: flex;
     margin-left: 20px;
     font-size: 10px;
@@ -214,13 +214,151 @@
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
+    column-count: 0;
   }
 
-  .favorite-text {
+  .product-text-beer-fav {
     margin-left: 20px;
     padding-bottom: 10px;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  // RECIPES
+
+  .wrapper-recipe-fav {
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    background: #DFE2D7;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+    &:hover{
+      transform: scale(1);
+      box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+    }
+
+    .top-recipe-fav, img {
+      margin-top: 0;
+      height: 210px;
+      width: inherit;
+      background-size: cover;
+      object-fit: cover;
+    }
+    .container-favorite-list-recipe {
+      width: 100%;
+      height: 100%;
+      .top-recipe-fav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom-recipe-fav{
+        width: 100%;
+        height: 30%;
+        .details-recipe-fav {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height:100%;
+          width: 100%;
+          background: #DFE2D7;
+          position:relative;
+          float: center;
+          padding: 10px;
+            h1 {
+              font-size: 19px;
+              text-align: center;
+              margin: O;
+            }
+          }
+        }
+      }
+    }
+
+  .link-product-recipe-fav {
+    text-decoration: none;
+    color: #34363A;
+  }
+
+  .link-product-recipe-fav:hover {
+    color: #34363A;
+  }
+
+ .bottom, .details a {
+    text-decoration: none;
+  }
+
+  .inside-product-recipe-fav {
+    z-index:9;
+    background: #FEC10D;
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    border-radius: 0px 0px 200px 200px;
+    transition: all 0.5s, border-radius 2s, top 1s;
+    overflow: hidden;
+    .icon-product-recipe-fav {
+      position: absolute;
+      right: 90px;
+      top: 88px;
+      color: #34363A;
+      opacity: 1;
+    }
+    &:hover {
+      width: 100%;
+      right: 0;
+      top: 0;
+      border-radius: 0;
+      height: 70%;
+      .icon-product-recipe-fav {
+        opacity: 0;
+        right:15px;
+        top:15px;
+      }
+      .contents-recipe-fav {
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(0);
+      }
+    }
+    .contents-recipe-fav{
+      padding: 5%;
+      opacity: 0;
+      transform: scale(0.5);
+      transform: translateY(-200%);
+      transition: opacity 0.2s, transform 0.8s;
+      .row {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .product-title-recipe-fav {
+    display: flex;
+    margin-left: 20px;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    column-count: 0;
+  }
+
+  .product-text-recipe-fav {
+    margin-left: 20px;
+    padding-bottom: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
     font-weight: 500;
     text-align: left;
   }

@@ -18,13 +18,13 @@
   padding: 40px 50px;
 }
 
-.head {
+.head-recipe {
   display: flex;
   justify-content: space-between;
   // align-items: center;
 }
 
-.show-name {
+.show-name-recipe {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 500;
   font-size: 26px;
@@ -39,7 +39,7 @@
   font-size: 15px;
 }
 
-.show-title {
+.show-title-recipe {
   display: flex;
   font-size: 10px;
   font-weight: 600;
@@ -55,7 +55,7 @@
   opacity: 0.4;
 }
 
-.show-text {
+.show-text-recipe {
   padding-bottom: 10px;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 16px;
@@ -63,7 +63,7 @@
   text-align: left;
 }
 
-.show-ingredients {
+.show-ingredients-recipe {
   font-size: 14px;
   padding: 20px 0 20px;
   b {
@@ -73,7 +73,7 @@
   }
 }
 
-.show-description {
+.show-description-recipe {
     font-size: 14px;
     b {
       font-family: 'Space Grotesk', sans-serif;
@@ -88,7 +88,7 @@ button.button-favorite {
   font-size: 16px;
 }
 
-.show-button-fav, .far {
+.show-button-fav-recipe, .far {
   font-size: 24px;
 }
 

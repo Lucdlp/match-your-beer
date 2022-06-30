@@ -15,37 +15,37 @@
         <div class="container-favorite">
 
           <% @my_favorite_beers.each do |favorite| %>
-          <div class="wrapper-fav">
-            <%= link_to beer_path(favorite.beer), class:"link-favorite" do %>
-              <div class="container-favorite-list">
-                <div class="top-beer">
+          <div class="wrapper-beer-fav">
+            <%= link_to beer_path(favorite.beer), class:"link-product-beer-fav" do %>
+              <div class="container-favorite-list-beer">
+                <div class="top-beer-fav">
                 <%= image_tag(favorite.beer.photo_path) %>
                 </div>
-                <div class="bottom">
-                  <div class="details">
+                <div class="bottom-beer-fav">
+                  <div class="details-beer-fav">
                     <h1><%= favorite.beer.name %></h1>
                   </div>
                 </div>
               </div>
-              <div class="inside-fav">
-                <div class="icon"><i class="fas fa-heart"></i></div>
-                <div class="contents">
+              <div class="inside-product-beer-fav">
+                <div class="icon-product-beer-fav"><i class="fas fa-heart"></i></div>
+                <div class="contents-beer-fav ">
                   <div class="row">
                     <div class="column-3 col col-6">
-                      <div class="favorite-title">Brasserie</div>
-                      <div class="favorite-text"><%= favorite.beer.brewery %></div>
-                      <div class="favorite-title">Type</div>
-                      <div class="favorite-text"><%= favorite.beer.color %></div>
-                      <div class="favorite-title">Style</div>
-                      <div class="favorite-text"><%= favorite.beer.style %></div>
+                      <div class="product-title-beer-fav ">Brasserie</div>
+                      <div class="product-text-beer-fav"><%= favorite.beer.brewery %></div>
+                      <div class="product-title-beer-fav ">Type</div>
+                      <div class="product-text-beer-fav"><%= favorite.beer.color %></div>
+                      <div class="product-title-beer-fav ">Style</div>
+                      <div class="product-text-beer-fav"><%= favorite.beer.style %></div>
                     </div>
                     <div class="col col-6">
-                      <div class="favorite-title">Origine</div>
-                      <div class="favorite-text"><%= favorite.beer.country %></div>
-                      <div class="favorite-title">Alcool</div>
-                      <div class="favorite-text"><%= favorite.beer.alcohol_level %> %</div>
-                      <div class="favorite-title">IBU</div>
-                      <div class="favorite-text"><%= favorite.beer.ibu_level %></div>
+                      <div class="product-title-beer-fav ">Origine</div>
+                      <div class="product-text-beer-fav"><%= favorite.beer.country %></div>
+                      <div class="product-title-beer-fav ">Alcool</div>
+                      <div class="product-text-beer-fav"><%= favorite.beer.alcohol_level %> %</div>
+                      <div class="product-title-beer-fav ">IBU</div>
+                      <div class="product-text-beer-fav"><%= favorite.beer.ibu_level %></div>
                     </div>
                   </div>
                 </div>
@@ -66,26 +66,26 @@
         <div class="container-favorite">
 
           <% @my_favorite_recipes.each do |favorite| %>
-          <div class="wrapper-fav">
-            <%= link_to recipe_path(favorite.recipe), class:"link-favorite" do %>
-            <div class="container-favorite-list">
-              <div class="top-recipe">
+          <div class="wrapper-recipe-fav">
+            <%= link_to recipe_path(favorite.recipe), class:"link-product-recipe-fav" do %>
+            <div class="container-favorite-list-recipe">
+              <div class="top-recipe-fav">
               <%= image_tag(favorite.recipe.photo_path) %>
               </div>
-              <div class="bottom">
-                <div class="details">
+              <div class="bottom-recipe-fav">
+                <div class="details-recipe-fav">
                   <h1><%= favorite.recipe.name %></h1>
                 </div>
               </div>
             </div>
-            <div class="inside-fav">
-              <div class="icon"><i class="fas fa-heart"></i></div>
-              <div class="contents">
+            <div class="inside-product-recipe-fav">
+              <div class="icon-product-recipe-fav"><i class="fas fa-heart"></i></div>
+              <div class="contents-recipe-fav">
                 <div class="row">
-                    <div class="favorite-title">Niveau de difficulté</div>
-                    <div class="favorite-text"><%= favorite.recipe.difficulty_level %></div>
-                    <div class="favorite-title">Temps de préparation</div>
-                    <div class="favorite-text"><%= favorite.recipe.prep_time %> min</div>
+                    <div class="product-title-recipe-fav">Niveau de difficulté</div>
+                    <div class="product-text-recipe-fav"><%= favorite.recipe.difficulty_level %></div>
+                    <div class="product-title-recipe-fav">Temps de préparation</div>
+                    <div class="product-text-recipe-fav"><%= favorite.recipe.prep_time %> min</div>
                   </div>
                 </div>
               </div>
